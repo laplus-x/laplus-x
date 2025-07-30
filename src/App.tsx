@@ -1,11 +1,12 @@
-import About from './components/About';
-import Contact from './components/Contact';
-import Contributions from './components/Contributions';
-import Experience from './components/Experience';
-import Hero from './components/Hero';
-import Navbar from './components/Navbar';
-import Projects from './components/Projects';
-import Skills from './components/Skills';
+import About from "./components/About";
+import Contact from "./components/Contact";
+import Contributions from "./components/Contributions";
+import Copyright from "./components/Copyright";
+import Experience from "./components/Experience";
+import Hero from "./components/Hero";
+import Navbar from "./components/Navbar";
+import Projects from "./components/Projects";
+import Skills from "./components/Skills";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Contributions />
         <Contact />
       </main>
+      <Copyright />
     </div>
   );
 }
