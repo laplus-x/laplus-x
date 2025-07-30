@@ -4,7 +4,7 @@ Website Engineer - Full Stack Developer
 
 ## About Me
 
-我是充滿熱情的全端開發者，喜歡將點子從原型一路實現到正式產品，偏好透過 **精實開發法(Lean development)** 解決實際的業務需求，並致力於優化工作流程、分享知識，協助團隊更高效地合作與成長。
+我是充滿熱情的全端開發者，喜歡將點子從原型一路實現到正式產品。偏好透過 **精實開發法(Lean development)** 來解決實際的業務需求。
 
 - 積極溝通，減少認知的誤差，避免做白工
 - 透明化工作資訊，讓團隊掌握現況
@@ -199,7 +199,7 @@ Website Engineer - Full Stack Developer
 
 <details>
 
-## cj information
+## [cj information](https://www.chanjui.com/)
 
 核心業務為交通票務平台，整合交通工具 QR 票券，讓旅客能一站式完成搜尋與預訂。透過即時票務系統與安全支付機制，使用者不僅能輕鬆取得多元的交通票券，還能享受專屬優惠與彈性取消政策，讓行程更划算、更安心。對合作夥伴而言，系統能提升票券銷售效率，擴展客源，同時透過數據分析精準掌握旅客乘車需求，彈性調整班次發車。
 
@@ -247,7 +247,7 @@ Website Engineer - Full Stack Developer
 | **項目**       | **內容**                                                                  |
 | -------------- | ------------------------------------------------------------------------- |
 | **Tech Stack** | `Java` `TS/JS` `React` `Play` `vite` `vitest` `junit` `MultiRepo` `Clean` |
-| **Status**     | Design > Alpha Test                                                       |
+| **Status**     | Design ➝ Alpha Test                                                       |
 | **Servers**    | < 5                                                                       |
 | **Requests**   | < 1/day                                                                   |
 | **Queries**    | < 1/day                                                                   |
@@ -265,7 +265,7 @@ Website Engineer - Full Stack Developer
 | **項目**       | **內容**                                                                         |
 | -------------- | -------------------------------------------------------------------------------- |
 | **Tech Stack** | `Java` `TS/JS` `React` `SpringBoot` `vite` `vitest` `TestNG` `MultiRepo` `Clean` |
-| **Status**     | Design > Alpha Test                                                              |
+| **Status**     | Design ➝ Alpha Test                                                              |
 | **Servers**    | < 5                                                                              |
 | **Requests**   | < 1/day                                                                          |
 | **Queries**    | < 1/day                                                                          |
@@ -280,7 +280,7 @@ Website Engineer - Full Stack Developer
 | **項目**       | **內容**                                                                                                     |
 | -------------- | ------------------------------------------------------------------------------------------------------------ |
 | **Tech Stack** | `Go` `gnet` `Java` `SpringBoot` `TS/JS` `React` `Nest` `vite` `vitest` `junit` `MultiRepo` `Clean` `Pub/Sub` |
-| **Status**     | Design > Alpha Test                                                                                          |
+| **Status**     | Design ➝ Alpha Test                                                                                          |
 | **Servers**    | < 5                                                                                                          |
 | **Requests**   | < 1/sec                                                                                                      |
 | **Queries**    | < 1/hr                                                                                                       |
@@ -300,7 +300,7 @@ Website Engineer - Full Stack Developer
 | -------------- | ------------------------------------------------------------------ |
 | **Tech Stack** | `dbml` `openapi` `readme` `graphviz` `cursor` `chatgpt` `markdown` |
 
-## ucfunnel
+## [ucfunnel](https://www.ucfunnel.com)
 
 核心業務為高效能的數位廣告媒合系統(ADX)，能即時將廣告與最適合的目標族群配對。透過智慧競價機制，廣告主可用最具成本效益的方式獲取高價值曝光，同時確保廣告只投放在相關度高的受眾面前。對出版商而言，系統能快速提升廣告空間的填充率與收益，並提供透明的數據報告，方便即時掌握成效。簡單來說，這是一個讓廣告主「花得精準」、讓出版商「賺得更多」、讓受眾「看到更相關內容」的完整解決方案。
 
@@ -408,7 +408,7 @@ Website Engineer - Full Stack Developer
 | **項目**       | **內容**                                                                                        |
 | -------------- | ----------------------------------------------------------------------------------------------- |
 | **Tech Stack** | `jenkins` `Docker` `docker-compose` `k8s` `helm` `Rancher` `nginx` `docker registry` `Makefile` |
-| **Status**     | Design > Alpha Test > Release                                                                   |
+| **Status**     | Design ➝ Alpha Test ➝ Release                                                                   |
 
 ## Software Engineer - Full Stack | Oct 2019 - Oct 2020
 
@@ -450,7 +450,7 @@ Website Engineer - Full Stack Developer
 
 #### 2. 廣告版位供應方網站(SSP)
 
-專為出版商與媒體打造，協助客戶最大化廣告收益。透過智慧化自動交易程序，系統能將廣告版位即時連結至多個廣告交易市場與需求方平台，讓廣告競爭更激烈、收益更可觀。同時，提供透明的數據分析，幫助您全面掌握廣告效益，並具備品牌安全與防詐機制，確保廣告品質與使用者體驗。
+專為出版商與媒體打造，協助客戶最大化廣告收益。透過智慧化自動交易程序，系統能將廣告版位即時連結至多個廣告交易市場與需求方平台，讓廣告競爭更激烈、收益更可觀。
 
 - 開發 Prebid 程式碼生成器，協助用戶能在短時間內完成廣告程式碼整合，相較過往手動配置平均節省 80% 的整合時間。此工具大幅降低技術門檻，使非專業開發者也能快速導入廣告模組。
 - 開發基礎廣告模板生成功能，支援圖片、影音、原生廣告設定，讓用戶僅需透過參數設定即可自動生成廣告模板。
@@ -489,7 +489,7 @@ Website Engineer - Full Stack Developer
 
 #### 4. 廣告系統後台網站(Admin)
 
-透過集中化的後台，您可以輕鬆掌握所有客戶專案進度、預算分配與投放成效，避免資訊分散或重工。系統支援即時報價與合約管理，讓業務人員快速回應客戶需求，同時具備績效追蹤與數據分析功能，協助主管即時掌握團隊表現。再加上靈活的權限與工作流程設定，能有效提升內部協作效率，降低溝通成本，讓團隊在更短時間內完成更多業績。
+透過集中化的後台，可以輕鬆掌握所有客戶專案進度、預算分配與投放成效，避免資訊分散或重工。系統支援即時報價與合約管理，讓業務人員快速回應客戶需求，同時具備績效追蹤與數據分析功能，協助主管即時掌握團隊表現。再加上靈活的權限與工作流程設定，能有效提升內部協作效率，降低溝通成本，讓團隊在更短時間內完成更多業績。
 
 - 優化用戶權限驗證架構，根據不同用戶身分動態限制可瀏覽頁面與操作功能。有效避免了用戶誤用或越權操作，提升系統安全性。同時，透過精準權限分層，將不必要的功能隱藏，讓使用者體驗更加直覺。
 - 開發廣告交易限制功能，允許廣告主、出版商精準指定、排除特定交易對象，確保品牌在競價環境中擁有更高的掌控度。
