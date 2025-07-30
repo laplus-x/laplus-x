@@ -66,7 +66,7 @@ const Hero = () => {
         <img
           src="https://avatars.githubusercontent.com/u/105040809"
           alt="avatar"
-          className="w-24 h-24 rounded-full shadow-lg bg-[#050b1e] mb-4"
+          className="w-50 h-50 rounded-full shadow-lg bg-[#050b1e] mb-4"
         />
         <h1
           className="text-4xl md:text-5xl font-extrabold mb-2"
