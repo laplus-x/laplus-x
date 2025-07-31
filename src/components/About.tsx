@@ -4,7 +4,22 @@ const About = () => (
       <h2 className="text-3xl font-bold" style={{ color: "#a654fb" }}>
         關於我
       </h2>
+
       <div className="flex space-x-4">
+        <a
+          href="https://www.linkedin.com/in/margo-chen-812045378"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Linkedin"
+        >
+          <img
+            alt="Linkedin"
+            height={36}
+            width={36}
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/LinkedIn_icon.svg/108px-LinkedIn_icon.svg.png"
+          />
+        </a>
+
         <a
           href="https://github.com/laplus-x"
           target="_blank"

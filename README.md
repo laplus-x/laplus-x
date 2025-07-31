@@ -1,6 +1,6 @@
 # Margo Chen
 
-Website Engineer - Full Stack Developer
+Software Engineer - Full Stack Developer
 
 ## About Me
 

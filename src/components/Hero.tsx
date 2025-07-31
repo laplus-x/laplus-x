@@ -78,7 +78,7 @@ const Hero = () => {
           className="text-xl md:text-2xl font-semibold mb-4"
           style={{ color: "#ea97ef" }}
         >
-          Website Engineer / Full Stack Developer
+          Software Engineer / Full Stack Developer
         </h2>
         <div
           className="max-w-xl flex flex-col text-center gap-2 mb-6"
