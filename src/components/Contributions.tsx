@@ -1,4 +1,4 @@
-const contributions = [
+export const contributions = [
   {
     company: "cj information",
     title: "智慧停車柱參數網站",

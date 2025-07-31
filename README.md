@@ -20,7 +20,7 @@ Website Engineer - Full Stack Developer
 
 ## Education
 
-- [電腦科學與資訊工程學士 | Tamkang University](https://www.csie.tku.edu.tw/)
+- [電腦科學與資訊工程學士 | 淡江大學](https://www.csie.tku.edu.tw/)
 
 ## Skills
 

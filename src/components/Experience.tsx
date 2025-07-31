@@ -1,4 +1,4 @@
-const experiences = [
+export const experiences = [
   {
     company: "cj information",
     link: "https://www.chanjui.com/",
@@ -9,13 +9,9 @@ const experiences = [
       members: "1~2",
       method: "文件優先、瀑布式開發",
     },
-    desc: "交通票務平台，整合交通工具 QR 票券，讓旅客能一站式完成搜尋與預訂。",
-    highlights: [
-      "智慧停車柱參數網站：用戶權限驗證、設備參數管理、匯出功能",
-      "設備報修網站：權限驗證、案件申報、進度追蹤、SLA 監控、報表",
-      "設備監控網站：事件紀錄、統計報表",
-      "開發文件生成及管理：自動產生 API/ER 文件、readme-ai 分析、widdershins 轉換",
-    ],
+    summary:
+      "核心業務為交通票務平台，整合交通工具 QR 票券，讓旅客能一站式完成搜尋與預訂。透過即時票務系統與安全支付機制，使用者不僅能輕鬆取得多元的交通票券，還能享受專屬優惠與彈性取消政策，讓行程更划算、更安心。",
+    highlights: ["QR 票券", "預訂控位", "多元支付"],
   },
   {
     company: "ucfunnel",
@@ -27,14 +23,9 @@ const experiences = [
       members: "5~8",
       method: "文件優先、隕石式開發",
     },
-    desc: "高效能數位廣告媒合系統(ADX)，即時將廣告與最適合的目標族群配對。",
-    highlights: [
-      "創意素材服務(DCO)：廣告模板渲染、事件紀錄",
-      "內容管理服務(CMS)：內容模板、媒體檔案管理",
-      "廣告流量審核服務：流量驗證、機器學習",
-      "廣告成效追蹤服務：數據收集、報表分析",
-      "服務部署及管理(DevOps)：CI/CD、Docker、K8s、Rancher",
-    ],
+    summary:
+      "核心業務為高效能的數位廣告媒合系統(ADX)，能即時將廣告與最適合的目標族群配對。透過智慧競價機制，廣告主可用最具成本效益的方式獲取高價值曝光，同時確保廣告只投放在相關度高的受眾面前。對出版商而言，系統能快速提升廣告空間的填充率與收益，並提供透明的數據報告，方便即時掌握成效。",
+    highlights: ["即時廣告媒合", "智慧競價", "巨量數據"],
   },
   {
     company: "ucfunnel",
@@ -46,13 +37,9 @@ const experiences = [
       members: "1~3",
       method: "功能優先、隕石式開發",
     },
-    desc: "廣告需求方/供應方/素材/後台等多元 Dashboard，支援多層權限、動態模板、成效追蹤與自動化報表。",
-    highlights: [
-      "DSP：多層權限管理、廣告模板生成、多幣別、目標設定",
-      "SSP：Prebid 程式碼生成、廣告模板、影片模組、動態出價",
-      "DCO：動態創意優化、素材管理、成效追蹤",
-      "Admin：權限分層、交易限制、錯誤分析、機器學習參數設定",
-    ],
+    summary:
+      "核心業務為建構並維護廣告投放前端與後端介面，確保廣告主能順利上傳素材、設定目標族群與預算。設計資料可視化模組，讓廣告主與出版商能即時查看曝光量、點擊率、收益等關鍵指標。",
+    highlights: ["參數設定", "素材內容管理", "資料可視化"],
   },
 ];
 
@@ -92,10 +79,15 @@ const Experience = () => (
           <div className="font-medium mb-2" style={{ color: "#a654fb" }}>
             {exp.title}
           </div>
-          <div className="mb-2">{exp.desc}</div>
-          <ul className="list-disc pl-6 space-y-1">
+          <div className="mb-2">{exp.summary}</div>
+          <ul className="flex flex-wrap gap-2">
             {exp.highlights.map((h) => (
-              <li key={h}>{h}</li>
+              <li
+                key={h}
+                className="bg-[#a654fb] text-[#fbfefe] px-3 py-1 mb-1 rounded-full text-sm font-medium border border-[#ea97ef]"
+              >
+                {h}
+              </li>
             ))}
           </ul>
         </a>

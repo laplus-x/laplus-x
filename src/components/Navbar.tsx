@@ -25,6 +25,10 @@ const menus = [
     name: "聯絡",
     link: "#contact",
   },
+  {
+    name: "履歷",
+    link: "#resume",
+  },
 ];
 
 const Navbar = () => {
