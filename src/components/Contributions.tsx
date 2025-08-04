@@ -1,4 +1,4 @@
-export const contributions = [
+const contributions = [
   {
     company: "cj information",
     title: "智慧停車柱參數網站",
@@ -98,7 +98,7 @@ export const contributions = [
     title: "創意素材服務(DCO)",
     desc: "支援自動格式轉換與多版本管理，確保每個素材符合不同渠道與版位的規範，提升投放效率。透過高效的 API 串接與即時狀態回報，工程師能輕鬆監控素材上傳與投遞流程，快速定位問題並即時修正，確保廣告無縫展示。",
     status: "Release",
-    stack: ["Go", "Fasthttp", "mongodb", "MultiRepo", "MVC", "ELK", "kafka"],
+    stack: ["Go", "Fasthttp", "MongoDB", "MultiRepo", "MVC", "ELK", "kafka"],
     issues: [
       "開發富媒體廣告模板渲染功能，依據不同交易動態渲染對應模板。",
       "開發廣告事件紀錄，採用批次寫入與快取機制，追蹤點擊、瀏覽、轉換等多種事件。",
@@ -130,7 +130,7 @@ export const contributions = [
     title: "廣告成效追蹤服務",
     desc: "透過精準的數據收集與分析，協助廣告主完整掌握使用者從曝光、點擊到轉換的每一個環節。系統採用跨平台與跨裝置追蹤技術，能有效整合網站、App 及第三方渠道的行為數據，避免流量遺失與重複計算。",
     status: "Stable",
-    stack: ["Go", "JS", "druid", "redis", "mongodb", "Pub/Sub"],
+    stack: ["Go", "JS", "druid", "redis", "MongoDB", "Pub/Sub"],
     issues: [
       "開發統計報表功能，根據多種業務條件整合、統計數據，支援 CSV、Excel、JSON 格式輸出報表，降低人工製作報表的時間與成本。",
     ],
@@ -169,7 +169,7 @@ export const contributions = [
       "JS",
       "AngularJS",
       "Express",
-      "mongodb",
+      "MongoDB",
       "redis",
       "webpack",
       "ejs",
@@ -193,7 +193,7 @@ export const contributions = [
       "JS",
       "Nuxt",
       "Koa",
-      "mongodb",
+      "MongoDB",
       "webpack",
       "vuex",
       "element",
@@ -219,7 +219,7 @@ export const contributions = [
       "JS",
       "Vue",
       "Koa",
-      "mongodb",
+      "MongoDB",
       "webpack",
       "vuex",
       "element",
@@ -244,7 +244,7 @@ export const contributions = [
       "JS",
       "AngularJS",
       "Express",
-      "mongodb",
+      "MongoDB",
       "redis",
       "webpack",
       "ejs",

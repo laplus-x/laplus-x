@@ -97,17 +97,17 @@ Software Engineer - Full Stack Developer
 | Prometheus          | the last year | 0.5 years+ | 🌟           |
 | Opentelemetry       | the last year | 0.5 years+ | 🌟           |
 
-| Database | Used          | Exp      | Level    |
-| -------- | ------------- | -------- | -------- |
-| Mongo    | 3 years ago   | 2 years+ | 🌟🌟🌟🌟 |
-| MySQL    | the last year | 2 years+ | 🌟🌟🌟   |
-| Redis    | 2 years ago   | 3 years+ | 🌟🌟🌟   |
-| Postgres | 1 years ago   | 1 years+ | 🌟🌟     |
-| Druid    | 3 years ago   | 1 years+ | 🌟       |
+| Database   | Used          | Exp      | Level        |
+| ---------- | ------------- | -------- | ------------ |
+| MongoDB    | 3 years ago   | 2 years+ | 🌟🌟🌟🌟 |
+| MySQL      | the last year | 2 years+ | 🌟🌟🌟    |
+| Redis      | 2 years ago   | 3 years+ | 🌟🌟🌟    |
+| PostgreSQL | 1 years ago   | 1 years+ | 🌟🌟       |
+| Druid      | 3 years ago   | 1 years+ | 🌟          |
 
-| MessageQueue | Used        | Exp        | Level |
-| ------------ | ----------- | ---------- | ----- |
-| Rabbit       | 3 years ago | 1 years+   | 🌟🌟  |
+| MessageQueue | Used        | Exp        | Level  |
+| ------------ | ----------- | ---------- | ------ |
+| RabbitMQ     | 3 years ago | 1 years+   | 🌟🌟 |
 | Kafka        | 3 years ago | 0.5 years+ | 🌟    |
 | Redis        | 3 years ago | 0.5 years+ | 🌟    |
 
@@ -344,7 +344,7 @@ Software Engineer - Full Stack Developer
 
 | **項目**       | **內容**                                                  |
 | -------------- | --------------------------------------------------------- |
-| **Tech Stack** | `Go` `Fasthttp` `mongodb` `MultiRepo` `MVC` `ELK` `kafka` |
+| **Tech Stack** | `Go` `Fasthttp` `MongoDB` `MultiRepo` `MVC` `ELK` `kafka` |
 | **Status**     | Design ➝ Alpha Test ➝ Release                             |
 | **Servers**    | < 5                                                       |
 | **Requests**   | < 2500/sec                                                |
@@ -387,7 +387,7 @@ Software Engineer - Full Stack Developer
 
 | **項目**       | **內容**                                      |
 | -------------- | --------------------------------------------- |
-| **Tech Stack** | `Go` `JS` `druid` `redis` `mongodb` `Pub/Sub` |
+| **Tech Stack** | `Go` `JS` `druid` `redis` `MongoDB` `Pub/Sub` |
 | **Status**     | Stable                                        |
 | **Servers**    | < 30                                          |
 | **Requests**   | < 2500/sec                                    |
@@ -441,7 +441,7 @@ Software Engineer - Full Stack Developer
 
 | **項目**       | **內容**                                                                               |
 | -------------- | -------------------------------------------------------------------------------------- |
-| **Tech Stack** | `JS` `AngularJS` `Express` `mongodb` `redis` `webpack` `ejs` `jQuery` `Monolith` `MVC` |
+| **Tech Stack** | `JS` `AngularJS` `Express` `MongoDB` `redis` `webpack` `ejs` `jQuery` `Monolith` `MVC` |
 | **Status**     | Stable                                                                                 |
 | **Servers**    | < 5                                                                                    |
 | **Users**      | < 10                                                                                   |
@@ -461,7 +461,7 @@ Software Engineer - Full Stack Developer
 
 | **項目**       | **內容**                                                                        |
 | -------------- | ------------------------------------------------------------------------------- |
-| **Tech Stack** | `JS` `Nuxt` `Koa` `mongodb` `webpack` `vuex` `element` `sass` `MultiRepo` `MVC` |
+| **Tech Stack** | `JS` `Nuxt` `Koa` `MongoDB` `webpack` `vuex` `element` `sass` `MultiRepo` `MVC` |
 | **Status**     | Stable                                                                          |
 | **Servers**    | < 5                                                                             |
 | **Users**      | < 2000                                                                          |
@@ -480,7 +480,7 @@ Software Engineer - Full Stack Developer
 
 | **項目**       | **內容**                                                                       |
 | -------------- | ------------------------------------------------------------------------------ |
-| **Tech Stack** | `JS` `Vue` `Koa` `mongodb` `webpack` `vuex` `element` `sass` `MultiRepo` `MVC` |
+| **Tech Stack** | `JS` `Vue` `Koa` `MongoDB` `webpack` `vuex` `element` `sass` `MultiRepo` `MVC` |
 | **Status**     | Design ➝ Alpha Test ➝ Release                                                  |
 | **Servers**    | < 5                                                                            |
 | **Users**      | < 5                                                                            |
@@ -498,7 +498,7 @@ Software Engineer - Full Stack Developer
 
 | **項目**       | **內容**                                                                               |
 | -------------- | -------------------------------------------------------------------------------------- |
-| **Tech Stack** | `JS` `AngularJS` `Express` `mongodb` `redis` `webpack` `ejs` `jQuery` `Monolith` `MVC` |
+| **Tech Stack** | `JS` `AngularJS` `Express` `MongoDB` `redis` `webpack` `ejs` `jQuery` `Monolith` `MVC` |
 | **Status**     | Stable                                                                                 |
 | **Servers**    | < 5                                                                                    |
 | **Users**      | < 30                                                                                   |

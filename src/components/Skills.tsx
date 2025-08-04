@@ -38,9 +38,9 @@ export const skills = [
   },
   {
     category: "資料庫",
-    items: ["Mongo", "MySQL", "Redis", "Postgres", "Druid"],
+    items: ["MongoDB", "MySQL", "Redis", "PostgreSQL", "Druid"],
   },
-  { category: "消息佇列", items: ["Rabbit", "Kafka", "Redis"] },
+  { category: "消息佇列", items: ["RabbitMQ", "Kafka", "Redis"] },
 ];
 
 const Skills = () => (

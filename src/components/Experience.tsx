@@ -1,4 +1,4 @@
-export const experiences = [
+const experiences = [
   {
     company: "cj information",
     link: "https://www.chanjui.com/",

@@ -1,8 +1,83 @@
 import { useRef } from "react";
 import { useReactToPrint } from "react-to-print";
-import { contributions } from "./Contributions";
-import { experiences } from "./Experience";
 import { skills } from "./Skills";
+
+const experiences = [
+  {
+    company: "cj information",
+    title: "Software Engineer - Full Stack",
+    period: "Mar 2023 - Mar 2025",
+    team: "RD（1~2人，文件優先、瀑布式開發）",
+    summary:
+      "主要負責交通票務平台與智慧停車管理系統開發，讓旅客可一站式完成票券預訂，並協助政府與企業提升交通與設備營運效率。",
+    contributions: [
+      "開發交通票務平台，整合多元交通票券，提供即時預訂與安全支付。",
+      "打造智慧停車柱管理平台，讓管理者能快速調整設備參數並生成設定檔。",
+      "建置設備報修系統，數位化報修流程，縮短維修時間並提升追蹤透明度。",
+      "開發設備監控網站，提供即時異常警示與歷史數據分析，降低停機風險。",
+      "建立自動化文件生成工具，確保開發文件與系統功能保持同步，方便跨部門協作。",
+    ],
+    stack: [
+      "Java",
+      "TS/JS",
+      "Go",
+      "React",
+      "Play",
+      "SpringBoot",
+      "gnet",
+      "MySQL",
+    ],
+  },
+  {
+    company: "ucfunnel",
+    title: "Software Engineer - Full Stack",
+    period: "Oct 2020 - Mar 2022",
+    team: "Kernel（5~8人，文件優先、隕石式開發）",
+    summary:
+      "參與開發高效能的數位廣告媒合平台 (ADX)，協助廣告主精準投放並提升收益，並確保出版商廣告空間的高填充率與透明數據回饋。",
+    contributions: [
+      "建立廣告創意素材服務 (DCO)，自動適配多種版位並提升互動率。",
+      "建置廣告流量審核系統，過濾惡意與低質量流量，確保投放效益。",
+      "開發廣告成效追蹤服務，提供完整的跨平台轉換數據報表。",
+      "導入 DevOps 自動化部署流程，縮短交付時間並降低維運成本。",
+    ],
+    stack: [
+      "Go",
+      "JS",
+      "Fasthttp",
+      "Gin",
+      "MongoDB",
+      "PostgreSQL",
+      "redis",
+      "ELK",
+    ],
+  },
+  {
+    company: "ucfunnel",
+    title: "Software Engineer - Full Stack",
+    period: "Oct 2019 - Oct 2020",
+    team: "Dashboard（1~3人，功能優先、隕石式開發）",
+    summary:
+      "負責廣告投放前後端介面開發，讓廣告主能有效管理素材與投放設定，並透過數據可視化掌握投放成效。",
+    contributions: [
+      "協助 SSP 供應方平台開發，支援影音廣告與智慧出價，增加出版商收益。",
+      "協助廣告 DSP 平台開發，提供智慧投放與多幣別支持，提升國際市場靈活度。",
+      "設計廣告後台 (Admin) 平台，集中管理專案進度、預算與成效。",
+      "開發素材管理網站 (DCO)，支援動態廣告優化，提升點擊率與轉換率。",
+      "建立報表可視化模組，讓廣告主與出版商即時查看曝光量與收益。",
+      "優化權限與工作流程設定，提升跨部門協作效率。",
+    ],
+    stack: [
+      "JS",
+      "AngularJS",
+      "Vue",
+      "Nuxt",
+      "Express",
+      "MongoDB",
+      "redis"
+    ],
+  },
+];
 
 const Hero = () => (
   <div>
@@ -15,7 +90,6 @@ const Hero = () => (
 
 const About = () => (
   <div>
-    <h2 className="text-gray-800 font-semibold uppercase">About Me</h2>
     <div className="flex flex-col mt-2 text-xs text-gray-700 gap-1">
       <p>
         我是一位專注於 全端開發 的工程師，擅長以 精實開發法 (Lean Development)
@@ -179,7 +253,7 @@ const Experience = () => (
     <div className="flow-root text-xs text-gray-700 mt-2">
       <div className="flex flex-col gap-1">
         {experiences.map((exp) => (
-          <div key={exp.company + exp.team.name}>
+          <div key={exp.company + exp.period}>
             <div className="relative">
               <span className="absolute left-2 top-4 -ml-px h-full border border-dashed border-gray-200"></span>
               <div className="relative flex items-center space-x-3">
@@ -194,15 +268,10 @@ const Experience = () => (
                   </svg>
                 </div>
                 <div className="flex text-gray-500 w-full min-w-0 justify-between space-x-4">
-                  <a
-                    href={exp.link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="font-semibold underline underline-offset-2"
-                  >
+                  <p className="font-semibold underline underline-offset-2">
                     {exp.company}
-                  </a>
-                  <p className="font-semibold">Team: {exp.team.name}</p>
+                  </p>
+                  <p className="font-semibold">Team: {exp.team}</p>
                 </div>
               </div>
               <div className="pl-8 pt-2">
@@ -211,13 +280,22 @@ const Experience = () => (
                   <p>{exp.period}</p>
                 </div>
                 <div className="pt-2">{exp.summary}</div>
-                <ul className="flex flex-wrap gap-1 pt-2">
-                  {exp.highlights.map((h) => (
-                    <li key={h} className="px-3 py-1 mb-1 rounded-full border">
-                      {h}
+                <ul className="flex flex-wrap text-xs/2 pt-1 gap-1">
+                  {exp.stack.map((i) => (
+                    <li key={i} className="px-3 py-1 mb-1 rounded-full border">
+                      {i}
                     </li>
                   ))}
                 </ul>
+                {exp.contributions && (
+                  <div className="pt-2">
+                    <ul className="list-disc pl-3 pt-1 space-y-1">
+                      {exp.contributions.map((c) => (
+                        <li key={c}>{c}</li>
+                      ))}
+                    </ul>
+                  </div>
+                )}
               </div>
             </div>
           </div>
@@ -226,63 +304,6 @@ const Experience = () => (
     </div>
   </>
 );
-
-const Contributions = () => {
-  const g = contributions.reduce(
-    (prev: Record<string, typeof contributions>, curr) => {
-      prev[curr.company] ??= [];
-      prev[curr.company].push(curr);
-      return prev;
-    },
-    {}
-  );
-  return (
-    <>
-      <h2 className="text-gray-800 font-semibold uppercase">Contributions</h2>
-      <div className="flow-root text-xs text-gray-700 mt-2">
-        <div className="flex flex-col gap-1">
-          {Object.entries(g).map(([comp, contributions]) => (
-            <div key={comp}>
-              <div className="relative">
-                <span className="absolute left-2 top-4 -ml-px h-full border border-dashed border-gray-200"></span>
-                <div className="relative flex items-center space-x-3">
-                  <div>
-                    <svg
-                      viewBox="0 0 20 20"
-                      fill="currentColor"
-                      aria-hidden="true"
-                      className="h-4 w-4"
-                    >
-                      <path d="M3.105 2.289a.75.75 0 00-.826.95l1.414 4.925A1.5 1.5 0 005.135 9.25h6.115a.75.75 0 010 1.5H5.135a1.5 1.5 0 00-1.442 1.086l-1.414 4.926a.75.75 0 00.826.95 28.896 28.896 0 0015.293-7.154.75.75 0 000-1.115A28.897 28.897 0 003.105 2.289z"></path>
-                    </svg>
-                  </div>
-                  <div className="flex text-gray-500 w-full min-w-0 justify-between space-x-4">
-                    <p className="font-semibold underline underline-offset-2">
-                      {comp}
-                    </p>
-                  </div>
-                </div>
-                {contributions.map((con) => (
-                  <div key={con.title} className="pl-8 pt-2">
-                    <div className="flex text-gray-500 min-w-0 justify-between space-x-4">
-                      <p className="uppercase font-semibold">{con.title}</p>
-                      <p>{con.status}</p>
-                    </div>
-                    <ul className="list-disc pl-8 pt-2">
-                      {con.issues.map((i) => (
-                        <li key={i}>{i}</li>
-                      ))}
-                    </ul>
-                  </div>
-                ))}
-              </div>
-            </div>
-          ))}
-        </div>
-      </div>
-    </>
-  );
-};
 
 const Copyright = () => (
   <div className="flex justify-between text-gray-800 text-sm">
@@ -324,16 +345,15 @@ const Resume = () => {
         className="gray p-10 shadow antialiased rounded-md border border-gray-200 border-dashed bg-white max-w-5xl mx-auto"
       >
         <Hero />
+        <About />
         <div className="grid grid-cols-12 mt-4 mb-4 gap-6 text-sm">
           <div className="col-span-4 space-y-4">
-            <About />
             <Contact />
             <Education />
             <Skills />
-            <Experience />
           </div>
           <div className="col-span-8">
-            <Contributions />
+            <Experience />
           </div>
         </div>
         <Copyright />
