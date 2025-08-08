@@ -23,6 +23,13 @@ const projects = [
     issues: [],
   },
   {
+    name: "Dictionary Extension",
+    link: "https://github.com/laplus-x/dict-extension",
+    desc: "展現快速開發與高效交付的能力，短時間完成從選型到交付的完整流程。",
+    stack: ["TS", "React", "vite", "vitest", "Monolith", "chatgpt"],
+    issues: [],
+  },
+  {
     name: "2048",
     link: "https://github.com/laplus-x/2048-excalibur",
     desc: "展現快速學習與靈活應用新技術的能力，短時間完成從選型到交付的完整流程。",
