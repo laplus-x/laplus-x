@@ -1,0 +1,142 @@
+{
+  "title": "簡歷",
+  "btn": {
+    "print": "列印"
+  },
+  "hero": {
+    "subtitle": "Software Engineer - Full Stack Developer"
+  },
+  "about": {
+    "line1": "熱忱的全端開發工程師，具備將概念從原型轉化為可投入生產產品的豐富經驗。",
+    "line2": "擅長運用精益開發方法，高效解決實際業務需求。",
+    "line3": "善於清晰溝通、流程透明化與工作自動化，提升團隊整體效能。",
+    "line4": "堅持模組化程式設計，遵循高內聚低耦合原則。以穩定交付、精準工時預估及積極學習態度著稱，並樂於分享知識，促進團隊成長。"
+  },
+  "education": {
+    "title": "教育程度",
+    "degree": "電腦科學與資訊工程學士 | 淡江大學"
+  },
+  "contact": {
+    "title": "聯絡方式"
+  },
+  "skills": {
+    "title": "技能",
+    "items": [
+      {
+        "category": "語言與框架",
+        "items": [
+          "Java",
+          "Go",
+          "Python",
+          "JavaScript/TypeScript",
+          "React",
+          "Vue",
+          "Nuxt",
+          "AngularJS",
+          "Spring Boot",
+          "Koa",
+          "Express"
+        ]
+      },
+      {
+        "category": "資料庫",
+        "items": ["MongoDB", "PostgreSQL", "Redis", "Druid"]
+      },
+      {
+        "category": "架構",
+        "items": ["Microservices", "Monolith", "MVC", "Pub/Sub"]
+      },
+      {
+        "category": "DevOps 與 CI/CD",
+        "items": [
+          "Docker",
+          "Kubernetes",
+          "Rancher",
+          "Jenkins",
+          "Helm",
+          "Docker Compose",
+          "Makefile"
+        ]
+      },
+      {
+        "category": "測試與文件",
+        "items": ["JUnit", "TestNG", "Vitest", "OpenAPI", "DBML", "Graphviz"]
+      }
+    ]
+  },
+  "experiences": {
+    "title": "工作經驗",
+    "items": [
+      {
+        "company": "cj information",
+        "title": "Software Engineer - Full Stack",
+        "period": "Mar 2023 - Mar 2025",
+        "team": "RD（1~2人，文件優先、瀑布式開發）",
+        "summary": "主要負責交通票務平台與智慧停車管理系統開發，讓旅客可一站式完成票券預訂，並協助政府與企業提升交通與設備營運效率。",
+        "contributions": [
+          "開發交通票務平台，整合多元交通票券，提供即時預訂與安全支付。",
+          "打造智慧停車柱管理平台，讓管理者能快速調整設備參數並生成設定檔。",
+          "建置設備報修系統，數位化報修流程，縮短維修時間並提升追蹤透明度。",
+          "開發設備監控網站，提供即時異常警示與歷史數據分析，降低停機風險。",
+          "建立自動化文件生成工具，確保開發文件與系統功能保持同步，方便跨部門協作。"
+        ],
+        "stack": [
+          "Java",
+          "TS/JS",
+          "Go",
+          "React",
+          "Play",
+          "SpringBoot",
+          "gnet",
+          "MySQL"
+        ]
+      },
+      {
+        "company": "ucfunnel",
+        "title": "Software Engineer - Full Stack",
+        "period": "Oct 2020 - Mar 2022",
+        "team": "Kernel（5~8人，文件優先、隕石式開發）",
+        "summary": "參與開發高效能的數位廣告媒合平台 (ADX)，協助廣告主精準投放並提升收益，並確保出版商廣告空間的高填充率與透明數據回饋。",
+        "contributions": [
+          "建立廣告創意素材服務 (DCO)，自動適配多種版位並提升互動率。",
+          "建置廣告流量審核系統，過濾惡意與低質量流量，確保投放效益。",
+          "開發廣告成效追蹤服務，提供完整的跨平台轉換數據報表。",
+          "導入 DevOps 自動化部署流程，縮短交付時間並降低維運成本。"
+        ],
+        "stack": [
+          "Go",
+          "JS",
+          "Fasthttp",
+          "Gin",
+          "MongoDB",
+          "PostgreSQL",
+          "redis",
+          "ELK"
+        ]
+      },
+      {
+        "company": "ucfunnel",
+        "title": "Software Engineer - Full Stack",
+        "period": "Oct 2019 - Oct 2020",
+        "team": "Dashboard（1~3人，功能優先、隕石式開發）",
+        "summary": "負責廣告投放前後端介面開發，讓廣告主能有效管理素材與投放設定，並透過數據可視化掌握投放成效。",
+        "contributions": [
+          "協助 SSP 供應方平台開發，支援影音廣告與智慧出價，增加出版商收益。",
+          "協助廣告 DSP 平台開發，提供智慧投放與多幣別支持，提升國際市場靈活度。",
+          "設計廣告後台 (Admin) 平台，集中管理專案進度、預算與成效。",
+          "開發素材管理網站 (DCO)，支援動態廣告優化，提升點擊率與轉換率。",
+          "建立報表可視化模組，讓廣告主與出版商即時查看曝光量與收益。"
+        ],
+        "stack": [
+          "JS",
+          "AngularJS",
+          "Vue",
+          "Nuxt",
+          "Express",
+          "MongoDB",
+          "redis"
+        ]
+      }
+    ]
+  }
+}

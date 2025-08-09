@@ -1,0 +1,240 @@
+{
+  "title": "Experience",
+  "items": [
+    {
+      "company": "cj information",
+      "title": "Smart Parking Post Parameter Website",
+      "desc": "Focused on parameter configuration and maintenance management of parking posts, enabling quick modification of device parameters and generating configuration files for easy deployment by administrators.",
+      "status": "Alpha Test",
+      "stack": [
+        "Java",
+        "TS/JS",
+        "React",
+        "Play",
+        "vite",
+        "vitest",
+        "junit",
+        "MultiRepo",
+        "Clean"
+      ],
+      "issues": [
+        "Developed user authentication using JWT and RBAC mechanisms to verify identity and permissions, enhancing system security.",
+        "Developed device parameter management covering core parameters such as network connection, regional segments, and IP configuration, enabling administrators to complete settings and updates via the interface, reducing manual errors and omissions.",
+        "Developed device parameter export function supporting CSV and JSON formats to reduce time and cost of manually creating configuration files."
+      ]
+    },
+    {
+      "company": "cj information",
+      "title": "Equipment Repair Website",
+      "desc": "Simplified fault reporting process through online repair requests and assigned tasks to the most suitable technicians, ensuring rapid problem resolution. Real-time status tracking and historical record management allow administrators to fully grasp equipment health and repair progress, reducing downtime and maintenance costs. The system also includes reporting and analysis tools to identify failure trends, enabling proactive maintenance and extending equipment lifespan.",
+      "stack": [
+        "Java",
+        "TS/JS",
+        "React",
+        "SpringBoot",
+        "vite",
+        "vitest",
+        "TestNG",
+        "MultiRepo",
+        "Clean"
+      ],
+      "status": "Alpha Test",
+      "issues": [
+        "Developed user authentication with JWT and RBAC to verify identity and permissions, improving system security.",
+        "Developed case reporting feature, systematizing the original repair process that relied on Google Forms and paper to reduce manual errors and omissions.",
+        "Developed case progress tracking with real-time updates to improve maintenance progress inquiries.",
+        "Developed SLA monitoring with real-time alerts and overdue reminders to reduce breach risks.",
+        "Developed repair event reports with multi-dimensional filtering and graphical display, allowing managers to quickly understand failure rates, average repair time, and technician performance."
+      ]
+    },
+    {
+      "company": "cj information",
+      "title": "Equipment Monitoring Website",
+      "desc": "Enabled quick anomaly detection and immediate response through interfaces and real-time data updates. The system also supports historical data analysis and report generation to assist clients in preventive maintenance and performance optimization.",
+      "stack": [
+        "Go",
+        "gnet",
+        "Java",
+        "SpringBoot",
+        "TS/JS",
+        "React",
+        "Nest",
+        "vite",
+        "vitest",
+        "junit",
+        "MultiRepo",
+        "Clean",
+        "Pub/Sub"
+      ],
+      "status": "Alpha Test",
+      "issues": [
+        "Developed equipment event logging using Pub/Sub to track connection status, coordinates, and various events.",
+        "Developed statistical reporting features integrating and aggregating data based on multiple business conditions, supporting CSV, Excel, and JSON export formats to reduce manual report creation time and costs."
+      ]
+    },
+    {
+      "company": "cj information",
+      "title": "Development Documentation Generation and Management",
+      "desc": "Automatically generates clear and structured engineering documentation from development documents to avoid information gaps.",
+      "status": "Alpha Test",
+      "stack": [
+        "dbml",
+        "openapi",
+        "readme",
+        "graphviz",
+        "cursor",
+        "chatgpt",
+        "markdown"
+      ],
+      "issues": [
+        "Used ChatGPT to quickly refine vague business requirements into clear functional specifications, shortening requirement confirmation time.",
+        "Used ChatGPT to automatically generate API documentation in OpenAPI format based on functional needs, reducing documentation writing time.",
+        "Used ChatGPT to automatically generate ER model documents in DBML format according to functional needs, shortening documentation writing time.",
+        "Used Cursor with readme-ai format to analyze codebase and auto-generate documentation, reducing writing time.",
+        "Used Widdershins to convert OpenAPI with templates into markdown format for easy review.",
+        "Used custom library to convert DBML with templates into markdown and visualize with Graphviz syntax for easy review."
+      ]
+    },
+    {
+      "company": "ucfunnel",
+      "title": "Creative Asset Service (DCO)",
+      "desc": "Supports automatic format conversion and multi-version management to ensure each asset meets the specifications of different channels and placements, improving delivery efficiency. Through efficient API integration and real-time status reporting, engineers can easily monitor asset upload and delivery processes, quickly locate issues, and make instant corrections to ensure seamless ad display.",
+      "status": "Release",
+      "stack": [
+        "Go",
+        "Fasthttp",
+        "MongoDB",
+        "MultiRepo",
+        "MVC",
+        "ELK",
+        "kafka"
+      ],
+      "issues": [
+        "Developed rich media ad template rendering based on different transactions for dynamic template rendering.",
+        "Developed ad event logging using batch writing and caching mechanisms to track clicks, views, conversions, and other events."
+      ]
+    },
+    {
+      "company": "ucfunnel",
+      "title": "Content Management Service (CMS)",
+      "desc": "Highly automated templating and modular design enable easy deployment and fast website content updates without complex code maintenance. The system supports responsive design across devices, ensuring consistent and optimized brand presentation on mobile, tablet, and desktop. Built-in SEO tools and data tracking help clients improve search rankings and understand visitor behavior.",
+      "status": "Alpha Test",
+      "stack": [
+        "Go",
+        "gin",
+        "postgres",
+        "MicroServices",
+        "MVC"
+      ],
+      "issues": [
+        "Developed content template configuration supporting hierarchical structure and multiple content types, improving flexibility and reusability.",
+        "Developed media file management using distributed storage and cache optimization to reduce access latency."
+      ]
+    },
+    {
+      "company": "ucfunnel",
+      "title": "Ad Traffic Verification Service",
+      "desc": "Instantly verifies traffic during real-time bidding in ad delivery. Using advanced machine learning and behavioral analysis, it filters invalid clicks, malicious traffic, and suspicious sources in real-time, ensuring DSP bids and Exchange matches are of high-quality traffic.",
+      "status": "Release",
+      "stack": [
+        "python",
+        "postgres",
+        "crawler",
+        "selenium",
+        "Pub/Sub",
+        "rabbitMQ"
+      ],
+      "issues": [
+        "Developed traffic verification feature using Pub/Sub to check and analyze over ten million ad source records, ensuring supplier authenticity on the trading platform."
+      ]
+    },
+    {
+      "company": "ucfunnel",
+      "title": "Ad Performance Tracking Service",
+      "desc": "Helps advertisers fully grasp every stage from exposure, click, to conversion through precise data collection and analysis. The system uses cross-platform and cross-device tracking technology to effectively integrate behavioral data from websites, apps, and third-party channels, avoiding traffic loss and double counting.",
+      "status": "Stable",
+      "stack": [
+        "Go",
+        "JS",
+        "druid",
+        "redis",
+        "MongoDB",
+        "Pub/Sub"
+      ],
+      "issues": [
+        "Developed statistical reporting features integrating and aggregating data based on multiple business conditions, supporting CSV, Excel, and JSON export formats to reduce manual report creation time and costs."
+      ]
+    },
+    {
+      "company": "ucfunnel",
+      "title": "Service Deployment and Management (DevOps)",
+      "desc": "Integrated container orchestration tools, automated load balancing, and resource scheduling to quickly deploy, scale, and manage containerized applications, reducing operational complexity.",
+      "status": "Alpha Test",
+      "stack": [
+        "Docker",
+        "Docker-compose",
+        "Docker swarm",
+        "Rancher",
+        "Kubernetes",
+        "Jenkins",
+        "Makefile",
+        "CI/CD"
+      ],
+      "issues": [
+        "Designed and optimized project-specific Makefile integrating build, test, and deployment processes, effectively reducing errors and delivery time.",
+        "Introduced Docker containerization technology, greatly reducing cross-environment inconsistencies, lowering deployment errors, and shortening release time.",
+        "Implemented Docker Registry and established image version management to improve deployment efficiency and reduce version conflicts and rollbacks.",
+        "Wrote docker-compose configurations for container deployment management, reducing error rates.",
+        "Introduced Docker swarm to upgrade services from single-host to cross-host horizontal scaling, improving system availability and flexibility.",
+        "Adopted Rancher platform to centrally manage multiple Kubernetes clusters, enhancing multi-host deployment efficiency.",
+        "Developed Jenkins pipelines to automate CI/CD workflows, reducing manpower costs."
+      ]
+    },
+    {
+      "company": "ucfunnel",
+      "title": "Ad Placement Demand-Side Platform (DSP)",
+      "desc": "Built for brands and advertisers pursuing precise marketing, leveraging powerful data analysis and real-time bidding technology to place ads on the most cost-effective and suitable media and audiences. The system offers diverse ad placements covering websites, apps, streaming media, and social platforms, ensuring broad and effective brand exposure. Combined with transparent performance tracking and real-time reporting, clients can monitor investment returns and optimize strategies anytime.",
+      "status": "Stable",
+      "stack": [
+        "JS",
+        "AngularJS",
+        "Express",
+        "MongoDB",
+        "redis",
+        "webpack",
+        "ejs",
+        "jQuery",
+        "Monolith",
+        "MVC"
+      ],
+      "issues": [
+        "Developed multi-level permission management allowing parent users to adjust ad settings for child users, improving management efficiency.",
+        "Developed basic ad template generation supporting image, video, and native ads, enabling users to auto-generate templates via parameter settings.",
+        "Supported multi-currency settings, allowing clients to flexibly adjust budgets by market-specific currencies, greatly enhancing bidding flexibility.",
+        "Supported ad targeting settings, effectively improving ad matching accuracy, increasing click-through and conversion rates."
+      ]
+    },
+    {
+      "company": "ucfunnel",
+      "title": "Ad Placement Supply-Side Platform (SSP)",
+      "desc": "Designed for publishers and media to maximize ad revenue. Through intelligent automated trading, the system connects ad placements instantly to multiple ad exchanges and demand-side platforms, intensifying competition and increasing revenue.",
+      "status": "Stable",
+      "stack": [
+        "JS",
+        "Nuxt",
+        "Koa",
+        "MongoDB",
+        "webpack",
+        "vuex",
+        "element",
+        "sass",
+        "MultiRepo",
+        "MVC"
+      ],
+      "issues": [
+        "Developed Prebid code generator helping users integrate various ad sources, improving connection efficiency and simplifying operations.",
+        "Developed bidding frequency control to limit ad impressions per user per unit time, reducing excessive exposure and improving user experience."
+      ]
+    }
+  ]
+}

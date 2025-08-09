@@ -1,0 +1,13 @@
+{
+  "name": "Margo Chen",
+  "title": "Software Engineer / Full Stack Developer",
+  "intro": {
+    "line1": "I am a passionate full-stack developer.",
+    "line2": "Experienced in turning concepts into production-ready products.",
+    "line3": "Prefer lean development to efficiently solve business needs."
+  },
+  "btn": {
+    "contact": "Contact Me",
+    "contributions": "View Contributions"
+  }
+}
