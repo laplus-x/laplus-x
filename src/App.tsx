@@ -2,6 +2,7 @@ import About from "./components/About";
 import Contact from "./components/Contact";
 import Contributions from "./components/Contributions";
 import Copyright from "./components/Copyright";
+import CurriculumVitae from "./components/CurriculumVitae";
 import Experience from "./components/Experience";
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
@@ -22,6 +23,7 @@ function App() {
         <Contributions />
         <Contact />
         <Resume />
+        <CurriculumVitae />
       </main>
       <Copyright />
     </div>

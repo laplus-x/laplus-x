@@ -1,6 +1,8 @@
 import { useEffect, useRef } from "react";
+import { useTranslation } from "react-i18next";
 
 const Hero = () => {
+  const { t } = useTranslation("hero");
   const canvasRef = useRef<HTMLCanvasElement | null>(null);
 
   useEffect(() => {
@@ -18,7 +20,6 @@ const Hero = () => {
     canvas.style.height = height + "px";
     ctx.scale(dpr, dpr);
 
-    // 產生星星
     const STAR_NUM = 120;
     const stars = Array.from({ length: STAR_NUM }).map(() => ({
       x: Math.random() * width,
@@ -72,21 +73,21 @@ const Hero = () => {
           className="text-4xl md:text-5xl font-extrabold mb-2"
           style={{ color: "#a654fb" }}
         >
-          Margo Chen
+          {t("name")}
         </h1>
         <h2
           className="text-xl md:text-2xl font-semibold mb-4"
           style={{ color: "#ea97ef" }}
         >
-          Software Engineer / Full Stack Developer
+          {t("title")}
         </h2>
         <div
           className="max-w-xl flex flex-col text-center gap-2 mb-6"
           style={{ color: "#fbfefe" }}
         >
-          <p>我是充滿熱情的全端開發者</p>
-          <p>喜歡將點子從原型一路實現到正式產品</p>
-          <p>偏好透過精實開發法來解決實際業務需求</p>
+          <p>{t("intro.line1")}</p>
+          <p>{t("intro.line2")}</p>
+          <p>{t("intro.line3")}</p>
         </div>
         <div className="max-w-xl flex gap-4 mb-6">
           <a
@@ -94,14 +95,14 @@ const Hero = () => {
             className="px-6 py-2 rounded-full shadow transition"
             style={{ background: "#a654fb", color: "#fbfefe" }}
           >
-            聯絡我
+            {t("btn.contact")}
           </a>
           <a
             href="#contributions"
             className="px-6 py-2 rounded-full shadow transition border"
             style={{ borderColor: "#fbfefe", color: "#fbfefe" }}
           >
-            查看貢獻
+            {t("btn.contributions")}
           </a>
         </div>
       </div>

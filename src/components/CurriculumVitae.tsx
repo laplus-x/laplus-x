@@ -3,7 +3,7 @@ import { useTranslation } from "react-i18next";
 import { useReactToPrint } from "react-to-print";
 
 const Hero = () => {
-  const { t } = useTranslation("resume", { keyPrefix: "hero" });
+  const { t } = useTranslation("cv", { keyPrefix: "hero" });
 
   return (
     <div>
@@ -16,7 +16,7 @@ const Hero = () => {
 };
 
 const About = () => {
-  const { t } = useTranslation("resume", { keyPrefix: "about" });
+  const { t } = useTranslation("cv", { keyPrefix: "about" });
 
   return (
     <div>
@@ -31,7 +31,7 @@ const About = () => {
 };
 
 const Education = () => {
-  const { t } = useTranslation("resume", { keyPrefix: "education" });
+  const { t } = useTranslation("cv", { keyPrefix: "education" });
 
   return (
     <div>
@@ -61,7 +61,7 @@ const Education = () => {
 };
 
 const Contact = () => {
-  const { t } = useTranslation("resume", { keyPrefix: "contact" });
+  const { t } = useTranslation("cv", { keyPrefix: "contact" });
 
   return (
     <div>
@@ -162,7 +162,7 @@ const Contact = () => {
 };
 
 const Skills = () => {
-  const { t } = useTranslation("resume", { keyPrefix: "skills" });
+  const { t } = useTranslation("cv", { keyPrefix: "skills" });
 
   const skills = t("items", { returnObjects: true }) as any[];
 
@@ -188,7 +188,7 @@ const Skills = () => {
 };
 
 const Experiences = () => {
-  const { t } = useTranslation("resume", { keyPrefix: "experiences" });
+  const { t } = useTranslation("cv", { keyPrefix: "experiences" });
 
   const experiences = t("items", { returnObjects: true }) as any[];
 
@@ -260,15 +260,15 @@ const Copyright = () => (
     <a
       target="_blank"
       rel="noreferrer noopener"
-      href="https://github.com/laplus-x#resume"
+      href="https://github.com/laplus-x#cv"
     >
-      laplus-x.github.io/laplus-x#resume
+      laplus-x.github.io/laplus-x#cv
     </a>
   </div>
 );
 
-const Resume = () => {
-  const { t } = useTranslation("resume");
+const CurriculumVitae = () => {
+  const { t } = useTranslation("cv");
   const ref = useRef<HTMLDivElement>(null);
 
   const onPrint = useReactToPrint({
@@ -276,7 +276,7 @@ const Resume = () => {
   });
 
   return (
-    <section className="max-w-4xl mx-auto py-20 px-4" id="resume">
+    <section className="max-w-4xl mx-auto py-20 px-4" id="cv">
       <div className="flex justify-between mb-6">
         <h2 className="text-3xl font-bold" style={{ color: "#a654fb" }}>
           {t("title")}
@@ -312,4 +312,4 @@ const Resume = () => {
   );
 };
 
-export default Resume;
+export default CurriculumVitae;

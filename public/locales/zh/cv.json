@@ -1,0 +1,146 @@
+{
+  "title": "履歷",
+  "btn": {
+    "print": "列印"
+  },
+  "hero": {
+    "subtitle": "Software Engineer - Full Stack Developer"
+  },
+  "about": {
+    "line1": "熱忱的全端開發工程師，具備將概念從原型轉化為可投入生產產品的豐富經驗。",
+    "line2": "擅長運用精益開發方法，高效解決實際業務需求。",
+    "line3": "善於清晰溝通、流程透明化與工作自動化，提升團隊整體效能。",
+    "line4": "堅持模組化程式設計，遵循高內聚低耦合原則。以穩定交付、精準工時預估及積極學習態度著稱，並樂於分享知識，促進團隊成長。"
+  },
+  "education": {
+    "title": "教育程度",
+    "degree": "電腦科學與資訊工程學士 | 淡江大學"
+  },
+  "contact": {
+    "title": "聯絡方式"
+  },
+  "skills": {
+    "title": "技能",
+    "items": [
+      {
+        "category": "語言與框架",
+        "items": [
+          "Java",
+          "Go",
+          "Python",
+          "JavaScript/TypeScript",
+          "React",
+          "Vue",
+          "Nuxt",
+          "AngularJS",
+          "Spring Boot",
+          "Koa",
+          "Express"
+        ]
+      },
+      {
+        "category": "資料庫",
+        "items": ["MongoDB", "PostgreSQL", "Redis", "Druid"]
+      },
+      {
+        "category": "架構",
+        "items": ["Microservices", "Monolith", "MVC", "Pub/Sub"]
+      },
+      {
+        "category": "DevOps 與 CI/CD",
+        "items": [
+          "Docker",
+          "Kubernetes",
+          "Rancher",
+          "Jenkins",
+          "Helm",
+          "Docker Compose",
+          "Makefile"
+        ]
+      },
+      {
+        "category": "測試與文件",
+        "items": ["JUnit", "TestNG", "Vitest", "OpenAPI", "DBML", "Graphviz"]
+      }
+    ]
+  },
+  "experiences": {
+    "title": "工作經驗",
+    "items": [
+      {
+        "company": "CJ Information",
+        "title": "軟體工程師 – 全端開發",
+        "period": "2023/03 – 2025/03",
+        "team": "RD（1~2人，文件優先、瀑布式開發）",
+        "summary": "開發多個交通票務與設備管理系統，整合 Java、Go、React、Spring Boot，提供可擴展且易於維護的解決方案。",
+        "contributions": [
+          "實作 JWT + RBAC 權限驗證及自動化參數匯出 (CSV/JSON)，提升系統安全性並將人工設定時間縮短逾 50%。",
+          "建置即時監控與報表系統，採用 Pub/Sub 與多格式匯出 (CSV、Excel、JSON)，協助進行預防性維護並降低停機風險。",
+          "開發 AI 協作文件產線，整合 ChatGPT、OpenAPI、DBML、Graphviz，縮短技術文件產出時間 70%，並確保知識一致性。"
+        ],
+        "stack": [
+          "Java",
+          "Go",
+          "React",
+          "Spring Boot",
+          "JWT",
+          "RBAC",
+          "Pub/Sub",
+          "CSV/Excel/JSON",
+          "ChatGPT",
+          "OpenAPI",
+          "DBML",
+          "Graphviz"
+        ]
+      },
+      {
+        "company": "ucfunnel",
+        "title": "軟體工程師 – 全端開發",
+        "period": "2020/10 – 2022/03",
+        "team": "Kernel（5~8人，文件優先、隕石式開發）",
+        "summary": "開發高效能廣告與內容管理服務，採用 Go、Python、MongoDB、PostgreSQL 與 Pub/Sub 架構，處理高達 2,500 筆請求/秒的即時流量。",
+        "contributions": [
+          "建置即時流量驗證與防詐系統，每日處理數千萬筆廣告請求，確保資料真實性並提升競價品質。",
+          "規劃並部署可擴展的 DevOps 流程，整合 Docker、Kubernetes、Jenkins、Rancher，自動化 CI/CD，縮短上線時間 80%。",
+          "建立模組化報表系統，支援多格式匯出 (CSV、Excel、JSON)，將人工報表製作時間減少 70%，提升廣告成效追蹤效率。"
+        ],
+        "stack": [
+          "Go",
+          "Python",
+          "MongoDB",
+          "PostgreSQL",
+          "Pub/Sub",
+          "Docker",
+          "Kubernetes",
+          "Jenkins",
+          "Rancher",
+          "CI/CD",
+          "CSV/Excel/JSON"
+        ]
+      },
+      {
+        "company": "ucfunnel",
+        "title": "軟體工程師 – 全端開發",
+        "period": "2019/10 – 2020/10",
+        "team": "Dashboard（1~3人，功能優先、隕石式開發）",
+        "summary": "開發並維護程式化廣告平台 (DSP、SSP、DCO、Admin)，採用 JavaScript、AngularJS、Vue、Nuxt、Express、Koa、MongoDB，支援需求方與供應方整合。",
+        "contributions": [
+          "設計多層權限管理系統與動態廣告模板生成功能，提升管理效率並增加廣告點擊與轉換率。",
+          "實作 Prebid 程式碼生成器與自動化素材適配流程，整合時間減少 80%，讓非技術人員也能快速部署廣告模組。",
+          "開發即時分析與行銷儀表板，支援多格式報表輸出 (CSV、Excel、JSON)，提供可行的優化建議。"
+        ],
+        "stack": [
+          "JavaScript",
+          "AngularJS",
+          "Vue",
+          "Nuxt",
+          "Express",
+          "Koa",
+          "MongoDB",
+          "Prebid",
+          "CSV/Excel/JSON"
+        ]
+      }
+    ]
+  }
+}

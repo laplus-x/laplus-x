@@ -1,0 +1,38 @@
+{
+  "title": "專案",
+  "items": [
+    {
+      "name": "Poc Server",
+      "desc": "在可控且低成本的環境下，快速驗證創新想法並評估技術可行性。即時錯誤回饋與範例程式庫，縮短團隊技術差距。",
+      "stack": ["TS", "Nest", "vite", "vitest", "MonoRepo", "Clean"],
+      "issues": []
+    },
+    {
+      "name": "Poc Client",
+      "desc": "快速驗證創新想法並評估技術可行性。即時錯誤回饋與範例程式庫，縮短團隊技術差距。",
+      "stack": [
+        "TS",
+        "Rush",
+        "React",
+        "vite",
+        "vitest",
+        "Storybook",
+        "MonoRepo",
+        "Clean"
+      ],
+      "issues": []
+    },
+    {
+      "name": "Dictionary Extension",
+      "desc": "展現快速開發與高效交付的能力，短時間完成從選型到交付的完整流程。",
+      "stack": ["TS", "React", "vite", "vitest", "Monolith", "chatgpt"],
+      "issues": []
+    },
+    {
+      "name": "2048",
+      "desc": "展現快速學習與靈活應用新技術的能力，短時間完成從選型到交付的完整流程。",
+      "stack": ["TS", "Excalibur", "vite", "Playwright", "Monolith", "chatgpt"],
+      "issues": []
+    }
+  ]
+}

@@ -1,0 +1,142 @@
+{
+  "title": "Resume",
+  "btn": {
+    "print": "Print"
+  },
+  "hero": {
+    "subtitle": "Software Engineer - Full Stack Developer"
+  },
+  "about": {
+    "line1": "Passionate full-stack developer with extensive experience in transforming concepts from prototypes into production-ready products.",
+    "line2": "Skilled in applying lean development methodologies to efficiently address real business needs.",
+    "line3": "Proficient in clear communication, process transparency, and work automation to enhance overall team efficiency.",
+    "line4": "Committed to modular programming design, adhering to high cohesion and low coupling principles. Known for stable delivery, accurate time estimation, and proactive learning attitude, while enjoying knowledge sharing to foster team growth."
+  },
+  "education": {
+    "title": "Education",
+    "degree": "Bachelor of Computer Science and Information Engineering | Tamkang University"
+  },
+  "contact": {
+    "title": "Contact Information"
+  },
+  "skills": {
+    "title": "Skills",
+    "items": [
+      {
+        "category": "Languages & Frameworks",
+        "items": [
+          "Java",
+          "Go",
+          "Python",
+          "JavaScript/TypeScript",
+          "React",
+          "Vue",
+          "Nuxt",
+          "AngularJS",
+          "Spring Boot",
+          "Koa",
+          "Express"
+        ]
+      },
+      {
+        "category": "Databases",
+        "items": ["MongoDB", "PostgreSQL", "Redis", "Druid"]
+      },
+      {
+        "category": "Architectures",
+        "items": ["Microservices", "Monolith", "MVC", "Pub/Sub"]
+      },
+      {
+        "category": "DevOps & CI/CD",
+        "items": [
+          "Docker",
+          "Kubernetes",
+          "Rancher",
+          "Jenkins",
+          "Helm",
+          "Docker Compose",
+          "Makefile"
+        ]
+      },
+      {
+        "category": "Testing & Documentation",
+        "items": ["JUnit", "TestNG", "Vitest", "OpenAPI", "DBML", "Graphviz"]
+      }
+    ]
+  },
+  "experiences": {
+    "title": "Work Experience",
+    "items": [
+      {
+        "company": "cj information",
+        "title": "Software Engineer - Full Stack",
+        "period": "Mar 2023 - Mar 2025",
+        "team": "R&D (1-2 people, documentation-first, waterfall development)",
+        "summary": "Mainly responsible for developing the transportation ticketing platform and smart parking management system, enabling travelers to complete ticket bookings in one place and assisting government and enterprises to improve transportation and equipment operation efficiency.",
+        "contributions": [
+          "Developed a transportation ticketing platform integrating various transportation tickets, providing real-time booking and secure payments.",
+          "Built a smart parking post management platform allowing managers to quickly adjust equipment parameters and generate configuration files.",
+          "Implemented an equipment repair reporting system, digitizing the repair process to shorten repair time and improve tracking transparency.",
+          "Developed an equipment monitoring website offering real-time anomaly alerts and historical data analysis to reduce downtime risks.",
+          "Established an automated documentation generation tool to ensure development documents stay synchronized with system features, facilitating cross-department collaboration."
+        ],
+        "stack": [
+          "Java",
+          "TS/JS",
+          "Go",
+          "React",
+          "Play",
+          "SpringBoot",
+          "gnet",
+          "MySQL"
+        ]
+      },
+      {
+        "company": "ucfunnel",
+        "title": "Software Engineer - Full Stack",
+        "period": "Oct 2020 - Mar 2022",
+        "team": "Kernel (5-8 people, documentation-first, meteor development)",
+        "summary": "Participated in developing a high-performance digital advertising exchange platform (ADX), helping advertisers deliver precise campaigns and increase revenue, while ensuring publishers' ad space fill rate and transparent data feedback.",
+        "contributions": [
+          "Built a Dynamic Creative Optimization (DCO) service to automatically adapt creatives to multiple placements and improve interaction rates.",
+          "Developed an ad traffic verification system to filter malicious and low-quality traffic, ensuring campaign effectiveness.",
+          "Created an ad performance tracking service providing comprehensive cross-platform conversion data reports.",
+          "Introduced DevOps automated deployment processes, reducing delivery time and lowering maintenance costs."
+        ],
+        "stack": [
+          "Go",
+          "JS",
+          "Fasthttp",
+          "Gin",
+          "MongoDB",
+          "PostgreSQL",
+          "Redis",
+          "ELK"
+        ]
+      },
+      {
+        "company": "ucfunnel",
+        "title": "Software Engineer - Full Stack",
+        "period": "Oct 2019 - Oct 2020",
+        "team": "Dashboard (1-3 people, feature-first, meteor development)",
+        "summary": "Responsible for front-end and back-end development of advertising interfaces, enabling advertisers to efficiently manage creatives and campaign settings, and visualize campaign performance through data.",
+        "contributions": [
+          "Assisted in developing SSP supply-side platform supporting video ads and smart bidding, increasing publisher revenue.",
+          "Contributed to DSP platform development providing smart delivery and multi-currency support, enhancing flexibility in international markets.",
+          "Designed ad backend (Admin) platform for centralized project progress, budget, and performance management.",
+          "Developed a creative management website (DCO) supporting dynamic ad optimization, improving click-through and conversion rates.",
+          "Built report visualization modules allowing advertisers and publishers to view real-time impressions and revenue."
+        ],
+        "stack": [
+          "JS",
+          "AngularJS",
+          "Vue",
+          "Nuxt",
+          "Express",
+          "MongoDB",
+          "Redis"
+        ]
+      }
+    ]
+  }
+}

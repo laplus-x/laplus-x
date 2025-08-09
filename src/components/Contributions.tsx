@@ -1,307 +1,54 @@
-const contributions = [
-  {
-    company: "cj information",
-    title: "智慧停車柱參數網站",
-    desc: "專注於車柱的參數設定與維運管理，能快速修改設備參數，生成設定檔，方便管理者佈署。",
-    status: "Alpha Test",
-    stack: [
-      "Java",
-      "TS/JS",
-      "React",
-      "Play",
-      "vite",
-      "vitest",
-      "junit",
-      "MultiRepo",
-      "Clean",
-    ],
-    issues: [
-      "開發用戶權限驗證，透過 JWT 以及 RBAC 機制，驗證身分、權限，提升系統安全性",
-      "開發設備參數管理，涵蓋網路連線、地區路段、IP配置等核心參數，使管理者能透過介面完成設定與更新，減少人工整理錯誤與遺漏率",
-      "開發設備參數匯出功能，支援 CSV、JSON 格式輸出參數，降低人工製作參數設定檔的時間與成本",
-    ],
-  },
-  {
-    company: "cj information",
-    title: "設備報修網站",
-    desc: "透過線上報修，簡化故障申請流程，並能派工給最合適的維修人員，確保問題快速被處理。透過即時狀態追蹤與歷史記錄管理，管理者可以全面掌握設備健康狀況與維修進度，降低停機時間與維修成本。此外，系統具備報表分析功能，幫助企業發現設備故障趨勢，提前安排預防性維護，延長設備使用壽命。",
-    stack: [
-      "Java",
-      "TS/JS",
-      "React",
-      "SpringBoot",
-      "vite",
-      "vitest",
-      "TestNG",
-      "MultiRepo",
-      "Clean",
-    ],
-    status: "Alpha Test",
-    issues: [
-      "開發用戶權限驗證，透過 JWT 以及 RBAC 機制，驗證身分、權限，提升系統安全性。",
-      "開發案件申報功能，將原本依賴 Google 表單與紙本的報修流程全面系統化，減少人工整理錯誤與遺漏率。",
-      "開發案件進度追蹤，即時更新案件狀態，提升查詢維修進度的效率。",
-      "開發案件 SLA 監控，建立即時警示與逾期提醒機制，降低違約風險。",
-      "開發報修事件報表，透過多維度篩選與圖表化展示，讓管理者可快速掌握設備故障率、平均修復時間與維修人員績效。",
-    ],
-  },
-  {
-    company: "cj information",
-    title: "設備監控網站",
-    desc: "透過介面與即時數據更新，能快速偵測異常並即刻響應。同時，系統支援歷史數據分析與報表生成，幫助客戶進行預防性維護與效能優化。",
-    stack: [
-      "Go",
-      "gnet",
-      "Java",
-      "SpringBoot",
-      "TS/JS",
-      "React",
-      "Nest",
-      "vite",
-      "vitest",
-      "junit",
-      "MultiRepo",
-      "Clean",
-      "Pub/Sub",
-    ],
-    status: "Alpha Test",
-    issues: [
-      "開發設備事件紀錄，採用 Pub/Sub 機制，追蹤連線狀態、座標位置等多種事件。",
-      "開發統計報表功能，根據多種業務條件整合、統計數據，支援 CSV、Excel、JSON 格式輸出報表，降低人工製作報表的時間與成本。",
-    ],
-  },
-  {
-    company: "cj information",
-    title: "開發文件生成及管理",
-    desc: "能自動從開發文件中生成清晰、結構化的工程說明文件，避免資訊落差。",
-    status: "Alpha Test",
-    stack: [
-      "dbml",
-      "openapi",
-      "readme",
-      "graphviz",
-      "cursor",
-      "chatgpt",
-      "markdown",
-    ],
-    issues: [
-      "使用 chatgpt，將模糊的業務需求快速細化，轉化成明確功能規格，縮短需求確認時間。",
-      "使用 chatgpt，以 openapi 格式為輸出參考，根據功能需求自動產生 API 文件，縮短文件的撰寫時間。",
-      "使用 chatgpt，以 dbml 格式為輸出參考，根據功能需求自動產生 ER model 文件，縮短文件的撰寫時間。",
-      "使用 cursor，以 readme-ai 格式為輸出參考，分析 codebase 自動產生說明文件，縮短文件的撰寫時間。",
-      "使用 widdershins，將 openapi 套用內容模板轉換成 markdown 格式，供他人查閱。",
-      "使用 自製 lib，將 dbml 套用內容模板轉換成 markdown 格式，並用 graphviz 語法可視化，供他人查閱。",
-    ],
-  },
-  {
-    company: "ucfunnel",
-    title: "創意素材服務(DCO)",
-    desc: "支援自動格式轉換與多版本管理，確保每個素材符合不同渠道與版位的規範，提升投放效率。透過高效的 API 串接與即時狀態回報，工程師能輕鬆監控素材上傳與投遞流程，快速定位問題並即時修正，確保廣告無縫展示。",
-    status: "Release",
-    stack: ["Go", "Fasthttp", "MongoDB", "MultiRepo", "MVC", "ELK", "kafka"],
-    issues: [
-      "開發富媒體廣告模板渲染功能，依據不同交易動態渲染對應模板。",
-      "開發廣告事件紀錄，採用批次寫入與快取機制，追蹤點擊、瀏覽、轉換等多種事件。",
-    ],
-  },
-  {
-    company: "ucfunnel",
-    title: "內容管理服務(CMS)",
-    desc: "透過高度自動化的模板與模組化設計，能輕鬆部署並快速更新網站內容，無需繁複的程式碼維護。系統支援多裝置響應式設計，確保品牌形象在手機、平板及桌面端一致且優化展示。同時，內建 SEO 優化工具及數據追蹤功能，幫助客戶提升搜尋排名並掌握訪客行為。",
-    status: "Alpha Test",
-    stack: ["Go", "gin", "postgres", "MicroServices", "MVC"],
-    issues: [
-      "開發內容模板設定，支援層級結構與多類型內容配置，提升靈活度與可重用性。",
-      "開發媒體檔案管理，採用分散式檔案儲存與快取優化機制，降低存取延遲。",
-    ],
-  },
-  {
-    company: "ucfunnel",
-    title: "廣告流量審核服務",
-    desc: "在廣告投放的即時競價過程中即刻進行流量驗證。透過先進的機器學習與行為分析技術，能即時過濾掉無效點擊、惡意流量與可疑來源，確保 DSP 出價與 Exchange 媒合的都是高品質流量。",
-    status: "Release",
-    stack: ["python", "postgres", "crawler", "selenium", "Pub/Sub", "rabbitMQ"],
-    issues: [
-      "開發流量驗證功能，採用 Pub/Sub 機制，檢查並分析超過千萬筆廣告來源資料，確保交易平台的供應商身份真實可靠。",
-    ],
-  },
-  {
-    company: "ucfunnel",
-    title: "廣告成效追蹤服務",
-    desc: "透過精準的數據收集與分析，協助廣告主完整掌握使用者從曝光、點擊到轉換的每一個環節。系統採用跨平台與跨裝置追蹤技術，能有效整合網站、App 及第三方渠道的行為數據，避免流量遺失與重複計算。",
-    status: "Stable",
-    stack: ["Go", "JS", "druid", "redis", "MongoDB", "Pub/Sub"],
-    issues: [
-      "開發統計報表功能，根據多種業務條件整合、統計數據，支援 CSV、Excel、JSON 格式輸出報表，降低人工製作報表的時間與成本。",
-    ],
-  },
-  {
-    company: "ucfunnel",
-    title: "服務部署及管理(DevOps)",
-    desc: "整合了容器編排工具，自動化負載平衡與資源調度，快速自動化地部署、擴展和管理容器化應用，降低運維複雜度。",
-    status: "Alpha Test",
-    stack: [
-      "Docker",
-      "Docker-compose",
-      "Docker swarm",
-      "Rancher",
-      "Kubernetes",
-      "Jenkins",
-      "Makefile",
-      "CI/CD",
-    ],
-    issues: [
-      "設計並優化專案專用的 Makefile，整合編譯、測試、佈署等流程，有效降低出錯率並縮短交付時間。",
-      "導入 Docker 容器化技術，大幅減少跨環境不一致問題，降低部署錯誤率，縮短上線時間。",
-      "導入 Docker Registry 並建立 Image 版本管理機制，提升部署效率，減少版本衝突與回滾問題。",
-      "編寫 docker-compose 管理容器部署設定，降低出錯率。",
-      "導入 Docker swarm，將服務由單機部署升級為跨機水平擴展，提升系統的可用性與彈性。",
-      "導入 Rancher 平台，統一管理多個 Kubernetes 叢集，提升多機部署效率。",
-      "編寫 jenkins pipeline 建置自動化 CI/CD 流程，減少人力成本。",
-    ],
-  },
-  {
-    company: "ucfunnel",
-    title: "廣告版位需求方網站(DSP)",
-    desc: "專為追求精準行銷的品牌與廣告主打造，透過強大的數據分析與即時競價技術，讓廣告能以最具成本效益的方式投放在最合適的媒體與受眾上。系統提供多元廣告版位選擇，涵蓋網站、App、影音串流與社群平台，確保品牌曝光廣泛且有效。搭配透明的成效追蹤與即時報表，可隨時掌握投資效益並優化策略。",
-    status: "Stable",
-    stack: [
-      "JS",
-      "AngularJS",
-      "Express",
-      "MongoDB",
-      "redis",
-      "webpack",
-      "ejs",
-      "jQuery",
-      "Monolith",
-      "MVC",
-    ],
-    issues: [
-      "開發多層權限管理機制，使父層用戶可對子層用戶的廣告設定調整操作，提升管理效率。",
-      "開發基礎廣告模板生成功能，支援圖片、影音、原生廣告設定，讓用戶僅需透過參數設定即可自動生成廣告模板。",
-      "支援多幣別設定，讓客戶能依據不同市場以特定貨幣靈活調整預算，大幅提升競標靈活性。",
-      "支援廣告目標設定，有效提升廣告媒合精準度，增加點擊率與轉換率。",
-    ],
-  },
-  {
-    company: "ucfunnel",
-    title: "廣告版位供應方網站(SSP)",
-    desc: "專為出版商與媒體打造，協助客戶最大化廣告收益。透過智慧化自動交易程序，系統能將廣告版位即時連結至多個廣告交易市場與需求方平台，讓廣告競爭更激烈、收益更可觀。",
-    status: "Stable",
-    stack: [
-      "JS",
-      "Nuxt",
-      "Koa",
-      "MongoDB",
-      "webpack",
-      "vuex",
-      "element",
-      "sass",
-      "MultiRepo",
-      "MVC",
-    ],
-    issues: [
-      "開發 Prebid 程式碼生成器，協助用戶能在短時間內完成廣告程式碼整合，相較過往手動配置平均節省 80% 的整合時間。此工具大幅降低技術門檻，使非專業開發者也能快速導入廣告模組",
-      "開發基礎廣告模板生成功能，支援圖片、影音、原生廣告設定，讓用戶僅需透過參數設定即可自動生成廣告模板",
-      "開發廣告影片播放模組，讓用戶可串接影音廣告，提升投放廣告類型的選擇彈性",
-      "開發動態出價模組，即時根據流量來源、使用者行為與競價環境，自動調整出價金額，有效利用廣告預算達成目標",
-      "支援多幣別設定，讓客戶能依據不同市場以特定貨幣靈活調整廣告底價，大幅提升競標靈活性",
-      "支援廣告目標設定，有效提升廣告媒合精準度，增加點擊率與轉換率。",
-    ],
-  },
-  {
-    company: "ucfunnel",
-    title: "創意素材網站(DCO)",
-    desc: "專為程式化廣告投放而設計，能與 DSP 無縫整合，讓素材在多渠道、多版位中自動適配與即時更新。透過動態創意優化（DCO），系統可依據受眾屬性與投放情境自動生成最相關的廣告版本，大幅提升點擊率與轉換率。",
-    status: "Release",
-    stack: [
-      "JS",
-      "Vue",
-      "Koa",
-      "MongoDB",
-      "webpack",
-      "vuex",
-      "element",
-      "sass",
-      "MultiRepo",
-      "MVC",
-    ],
-    issues: [
-      "開發富媒體廣告模板生成功能，實作超過 20 種以上視覺豐富且具有互動性的廣告模板，顯著提升廣告點擊率與轉換率。",
-      "開發動態廣告模板功能，根據瀏覽者環境、行為與偏好，即時匹配最相關的廣告模板，提升廣告精準度與成效。",
-      "開發廣告素材管理功能，支援圖片、影音、HTML5 等格式，自動調整不同尺寸與解析度，提升素材適配效率。",
-      "開發廣告素材成效追蹤功能，整合點擊率、曝光量及轉換率至儀表板，協助行銷團隊即時分析廣告效果。",
-      "支援廣告目標設定，有效提升廣告媒合精準度，進一步增加點擊率與轉換率。",
-    ],
-  },
-  {
-    company: "ucfunnel",
-    title: "廣告系統後台網站(Admin)",
-    desc: "透過集中化的後台，您可以輕鬆掌握所有客戶專案進度、預算分配與投放成效，避免資訊分散或重工。系統支援即時報價與合約管理，讓業務人員快速回應客戶需求，同時具備績效追蹤與數據分析功能，協助主管即時掌握團隊表現。再加上靈活的權限與工作流程設定，能有效提升內部協作效率，降低溝通成本，讓團隊在更短時間內完成更多業績。",
-    status: "Stable",
-    stack: [
-      "JS",
-      "AngularJS",
-      "Express",
-      "MongoDB",
-      "redis",
-      "webpack",
-      "ejs",
-      "jQuery",
-      "Monolith",
-      "MVC",
-    ],
-    issues: [
-      "優化用戶權限驗證架構，根據不同用戶身分動態限制可瀏覽頁面與操作功能，避免誤用或越權操作，提升系統安全性與使用體驗。",
-      "開發廣告交易限制功能，允許廣告主與出版商精準指定或排除特定交易對象，提升品牌在競價環境中的掌控度。",
-      "開發廣告交易錯誤分析功能，能即時診斷與統計投遞錯誤，並提供設定調整建議，協助營運團隊快速修正，降低無效廣告流量。",
-      "開發機器學習參數設定介面，讓工程師可動態調整模型參數，提升配置效率與模型效能。",
-    ],
-  },
-];
+import { useTranslation } from "react-i18next";
 
-const Contributions = () => (
-  <section className="max-w-4xl mx-auto py-20 px-4" id="contributions">
-    <h2 className="text-3xl font-bold mb-6" style={{ color: "#a654fb" }}>
-      貢獻
-    </h2>
-    <div className="space-y-8">
-      {contributions.map((con) => (
-        <div
-          key={con.title}
-          className="block rounded-xl shadow hover:shadow-lg transition p-6 border"
-          style={{ borderColor: "#a654fb", color: "#fbfefe" }}
-        >
-          <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-2">
-            <div>
-              <div
-                className="text-xl font-semibold mb-2"
-                style={{ color: "#ea97ef" }}
-              >
-                {con.title}
+const Contributions = () => {
+  const { t } = useTranslation("contributions");
+
+  const contributions = t("items", { returnObjects: true }) as any[];
+
+  return (
+    <section className="max-w-4xl mx-auto py-20 px-4" id="contributions">
+      <h2 className="text-3xl font-bold mb-6" style={{ color: "#a654fb" }}>
+        {t("title")}
+      </h2>
+      <div className="space-y-8">
+        {contributions.map((con: any) => (
+          <div
+            key={con.title}
+            className="block rounded-xl shadow hover:shadow-lg transition p-6 border"
+            style={{ borderColor: "#a654fb", color: "#fbfefe" }}
+          >
+            <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-2">
+              <div>
+                <div
+                  className="text-xl font-semibold mb-2"
+                  style={{ color: "#ea97ef" }}
+                >
+                  {con.title}
+                </div>
+                <div className="text-xs mb-2" style={{ color: "#a654fb" }}>
+                  <span className="mr-2">
+                    {t("contributions.company")}: {con.company}
+                  </span>
+                </div>
               </div>
-              <div className="text-xs mb-2" style={{ color: "#a654fb" }}>
-                <span className="mr-2">公司：{con.company}</span>
+              <div className="text-sm" style={{ color: "#fbfefe" }}>
+                {con.status}
               </div>
             </div>
-            <div className="text-sm" style={{ color: "#fbfefe" }}>
-              {con.status}
+            <div className="mb-2">{con.desc}</div>
+            <ul className="list-disc pl-6 space-y-1 mb-2">
+              {con.issues.map((issue: string) => (
+                <li key={issue}>{issue}</li>
+              ))}
+            </ul>
+            <div className="text-xs font-mono" style={{ color: "#a654fb" }}>
+              {con.stack.join(" / ")}
             </div>
           </div>
-          <div className="mb-2">{con.desc}</div>
-          <ul className="list-disc pl-6 space-y-1 mb-2">
-            {con.issues.map((i) => (
-              <li key={i}>{i}</li>
-            ))}
-          </ul>
-          <div className="text-xs font-mono" style={{ color: "#a654fb" }}>
-            {con.stack.join(" / ")}
-          </div>
-        </div>
-      ))}
-    </div>
-  </section>
-);
+        ))}
+      </div>
+    </section>
+  );
+};
 
 export default Contributions;

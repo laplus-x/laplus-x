@@ -1,38 +1,17 @@
 import { useState } from "react";
-
-const menus = [
-  {
-    name: "關於我",
-    link: "#about",
-  },
-  {
-    name: "技能",
-    link: "#skills",
-  },
-  {
-    name: "專案",
-    link: "#projects",
-  },
-  {
-    name: "經歷",
-    link: "#experience",
-  },
-  {
-    name: "貢獻",
-    link: "#contributions",
-  },
-  {
-    name: "聯絡",
-    link: "#contact",
-  },
-  {
-    name: "履歷",
-    link: "#resume",
-  },
-];
+import { useTranslation } from "react-i18next";
+import LanguageSwitcher from "./LanguageSwitcher";
 
 const Navbar = () => {
   const [opening, setOpening] = useState<boolean>(false);
+  const { t } = useTranslation("common");
+
+  const menus = Object.entries(t("header", { returnObjects: true })).map(
+    ([k, v]) => ({
+      text: v,
+      link: "#" + k,
+    })
+  ) as any[];
 
   return (
     <nav
@@ -87,16 +66,19 @@ const Navbar = () => {
         </button>
 
         <ul
-          className="hidden sm:flex gap-6 font-medium"
+          className="hidden items-baseline sm:flex gap-6 font-medium"
           style={{ color: "#fbfefe" }}
         >
           {menus.map((m) => (
-            <li key={m.name}>
+            <li key={m.text}>
               <a href={m.link} className="hover:text-[#ea97ef]">
-                {m.name}
+                {m.text}
               </a>
             </li>
           ))}
+          <li>
+            <LanguageSwitcher />
+          </li>
         </ul>
       </div>
 
@@ -107,16 +89,19 @@ const Navbar = () => {
             style={{ color: "#fbfefe" }}
           >
             {menus.map((m) => (
-              <li key={m.name}>
+              <li key={m.text}>
                 <a
                   href={m.link}
-                  className="hover:text-[#ea97ef]"
+                  className="block hover:text-[#ea97ef]"
                   onClick={() => setOpening(false)}
                 >
-                  {m.name}
+                  {m.text}
                 </a>
               </li>
             ))}
+            <li>
+              <LanguageSwitcher />
+            </li>
           </ul>
         </div>
       )}

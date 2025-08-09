@@ -1,0 +1,146 @@
+{
+  "title": "Resume",
+  "btn": {
+    "print": "Print"
+  },
+  "hero": {
+    "subtitle": "Software Engineer - Full Stack Developer"
+  },
+  "about": {
+    "line1": "Passionate full-stack developer with extensive experience in transforming concepts from prototypes into production-ready products.",
+    "line2": "Skilled in applying lean development methodologies to efficiently address real business needs.",
+    "line3": "Proficient in clear communication, process transparency, and work automation to enhance overall team efficiency.",
+    "line4": "Committed to modular programming design, adhering to high cohesion and low coupling principles. Known for stable delivery, accurate time estimation, and proactive learning attitude, while enjoying knowledge sharing to foster team growth."
+  },
+  "education": {
+    "title": "Education",
+    "degree": "Bachelor of Computer Science and Information Engineering | Tamkang University"
+  },
+  "contact": {
+    "title": "Contact Information"
+  },
+  "skills": {
+    "title": "Skills",
+    "items": [
+      {
+        "category": "Languages & Frameworks",
+        "items": [
+          "Java",
+          "Go",
+          "Python",
+          "JavaScript/TypeScript",
+          "React",
+          "Vue",
+          "Nuxt",
+          "AngularJS",
+          "Spring Boot",
+          "Koa",
+          "Express"
+        ]
+      },
+      {
+        "category": "Databases",
+        "items": ["MongoDB", "PostgreSQL", "Redis", "Druid"]
+      },
+      {
+        "category": "Architectures",
+        "items": ["Microservices", "Monolith", "MVC", "Pub/Sub"]
+      },
+      {
+        "category": "DevOps & CI/CD",
+        "items": [
+          "Docker",
+          "Kubernetes",
+          "Rancher",
+          "Jenkins",
+          "Helm",
+          "Docker Compose",
+          "Makefile"
+        ]
+      },
+      {
+        "category": "Testing & Documentation",
+        "items": ["JUnit", "TestNG", "Vitest", "OpenAPI", "DBML", "Graphviz"]
+      }
+    ]
+  },
+  "experiences": {
+    "title": "Work Experience",
+    "items": [
+      {
+        "company": "CJ Information",
+        "title": "Software Engineer – Full Stack Developer",
+        "period": "Mar 2023 – Mar 2025",
+        "team": "R&D (1–2 people, documentation-first, waterfall development)",
+        "summary": "Developed multiple transportation ticketing and equipment management systems, integrating Java, Go, React, and Spring Boot to provide scalable and maintainable solutions.",
+        "contributions": [
+          "Implemented JWT + RBAC authentication and automated parameter exports (CSV/JSON), enhancing system security and reducing manual setup time by over 50%.",
+          "Built real-time monitoring and reporting systems using Pub/Sub and multi-format exports (CSV, Excel, JSON), supporting preventive maintenance and reducing downtime risks.",
+          "Developed an AI-assisted documentation pipeline integrating ChatGPT, OpenAPI, DBML, and Graphviz, shortening technical document production time by 70% while ensuring knowledge consistency."
+        ],
+        "stack": [
+          "Java",
+          "Go",
+          "React",
+          "Spring Boot",
+          "JWT",
+          "RBAC",
+          "Pub/Sub",
+          "CSV/Excel/JSON",
+          "ChatGPT",
+          "OpenAPI",
+          "DBML",
+          "Graphviz"
+        ]
+      },
+      {
+        "company": "ucfunnel",
+        "title": "Software Engineer – Full Stack Developer",
+        "period": "Oct 2020 – Mar 2022",
+        "team": "Kernel (5–8 people, documentation-first, meteor development)",
+        "summary": "Developed high-performance advertising and content management services using Go, Python, MongoDB, PostgreSQL, and Pub/Sub architecture, handling up to 2,500 requests per second of real-time traffic.",
+        "contributions": [
+          "Built real-time traffic verification and fraud prevention systems processing tens of millions of ad requests daily, ensuring data authenticity and improving bidding quality.",
+          "Planned and deployed scalable DevOps workflows integrating Docker, Kubernetes, Jenkins, and Rancher, automating CI/CD and reducing deployment time by 80%.",
+          "Created a modular reporting system supporting multi-format exports (CSV, Excel, JSON), reducing manual report creation time by 70% and enhancing ad performance tracking efficiency."
+        ],
+        "stack": [
+          "Go",
+          "Python",
+          "MongoDB",
+          "PostgreSQL",
+          "Pub/Sub",
+          "Docker",
+          "Kubernetes",
+          "Jenkins",
+          "Rancher",
+          "CI/CD",
+          "CSV/Excel/JSON"
+        ]
+      },
+      {
+        "company": "ucfunnel",
+        "title": "Software Engineer – Full Stack Developer",
+        "period": "Oct 2019 – Oct 2020",
+        "team": "Dashboard (1–3 people, feature-first, meteor development)",
+        "summary": "Developed and maintained programmatic advertising platforms (DSP, SSP, DCO, Admin) using JavaScript, AngularJS, Vue, Nuxt, Express, Koa, and MongoDB, supporting integration of demand- and supply-side platforms.",
+        "contributions": [
+          "Designed multi-level permission management system and dynamic ad template generation features, improving management efficiency and increasing ad clicks and conversion rates.",
+          "Implemented Prebid code generator and automated creative adaptation workflow, reducing integration time by 80% and enabling non-technical users to quickly deploy ad modules.",
+          "Developed real-time analytics and marketing dashboards supporting multi-format report outputs (CSV, Excel, JSON), providing actionable optimization recommendations."
+        ],
+        "stack": [
+          "JavaScript",
+          "AngularJS",
+          "Vue",
+          "Nuxt",
+          "Express",
+          "Koa",
+          "MongoDB",
+          "Prebid",
+          "CSV/Excel/JSON"
+        ]
+      }
+    ]
+  }
+}
