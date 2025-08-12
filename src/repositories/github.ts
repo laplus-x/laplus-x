@@ -134,11 +134,7 @@ export class Github {
         const q = stringify(options, { arrayFormat: 'comma' })
         const url = `${this.BASE}/issues?${q}`
 
-        const resp = await fetch(url, {
-            headers: {
-                Authorization: `Bearer ${import.meta.env.VITE_GITHUB_SECRET}`
-            }
-        })
+        const resp = await fetch(url)
         if (!resp.ok) {
             throw new Error(`HTTP error! Status: ${resp.status} - ${resp.statusText}`);
         }
@@ -151,11 +147,7 @@ export class Github {
     public async getIssue(id: number) {
         const url = `${this.BASE}/issues/${id}`;
 
-        const resp = await fetch(url, {
-            headers: {
-                Authorization: `Bearer ${import.meta.env.VITE_GITHUB_SECRET}`
-            }
-        })
+        const resp = await fetch(url)
         if (!resp.ok) {
             throw new Error(`HTTP error! Status: ${resp.status} - ${resp.statusText}`);
         }
