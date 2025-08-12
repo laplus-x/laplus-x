@@ -97,7 +97,7 @@ export interface IssueDetail {
     number: number;
     title: string;
     user: User;
-    labels: any[]; 
+    labels: any[];
     state: string;
     locked: boolean;
     assignee: null | any;
@@ -139,6 +139,10 @@ export class Github {
                 Authorization: `Bearer ${import.meta.env.VITE_GITHUB_SECRET}`
             }
         })
+        if (!resp.ok) {
+            throw new Error(`HTTP error! Status: ${resp.status} - ${resp.statusText}`);
+        }
+
         const data: Issue[] = await resp.json()
         return data
     }
@@ -152,6 +156,10 @@ export class Github {
                 Authorization: `Bearer ${import.meta.env.VITE_GITHUB_SECRET}`
             }
         })
+        if (!resp.ok) {
+            throw new Error(`HTTP error! Status: ${resp.status} - ${resp.statusText}`);
+        }
+
         const data: IssueDetail = await resp.json();
         return data;
     }

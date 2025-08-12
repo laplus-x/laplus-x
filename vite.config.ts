@@ -42,7 +42,8 @@ export default defineConfig(({ mode }) => {
               "react-to-print",
               "react-router",
               "react-markdown",
-              "react-i18next"
+              "react-i18next",
+              "react-error-boundary"
             ],
             "i18next-vendor": [
               "i18next",
