@@ -7,7 +7,8 @@
     "contributions": "貢獻",
     "contact": "聯絡",
     "resume": "簡歷",
-    "cv": "履歷"
+    "cv": "履歷",
+    "posts": "文章"
   },
   "footer": {
     "copyright": "© 2025 Margo Chen | 使用 React 和 Tailwind 製作"

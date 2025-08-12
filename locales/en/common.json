@@ -7,7 +7,8 @@
     "contributions": "Contributions",
     "contact": "Contact",
     "resume": "Resume",
-    "cv": "CV"
+    "cv": "CV",
+    "posts": "Posts"
   },
   "footer": {
     "copyright": "© 2025 Margo Chen | Built with React and Tailwind"
