@@ -1,7 +1,7 @@
 import { useTranslation } from "react-i18next";
 
 const Copyright = () => {
-  const { t } = useTranslation();
+  const { t } = useTranslation("common");
 
   return (
     <footer className="w-full flex justify-center items-center py-4 px-8">

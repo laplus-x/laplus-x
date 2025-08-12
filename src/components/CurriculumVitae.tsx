@@ -272,7 +272,7 @@ const CurriculumVitae = () => {
   const ref = useRef<HTMLDivElement>(null);
 
   const onPrint = useReactToPrint({
-    documentTitle: "Resume",
+    documentTitle: "CurriculumVitae",
   });
 
   return (
