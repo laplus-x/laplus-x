@@ -1,3 +1,6 @@
+# Config
+*.env
+
 # Logs
 logs
 *.log
@@ -12,6 +15,7 @@ dist
 dist-ssr
 *.local
 *.qodo
+*.inspect
 
 # Editor directories and files
 .vscode/*
