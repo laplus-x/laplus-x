@@ -1,33 +1,41 @@
-import About from "./components/About";
-import Contact from "./components/Contact";
-import Contributions from "./components/Contributions";
-import Copyright from "./components/Copyright";
-import CurriculumVitae from "./components/CurriculumVitae";
-import Experience from "./components/Experience";
-import Hero from "./components/Hero";
-import Navbar from "./components/Navbar";
-import Projects from "./components/Projects";
-import Resume from "./components/Resume";
-import Skills from "./components/Skills";
+import { createBrowserRouter, Navigate, RouterProvider } from "react-router";
+import { Home } from "./components/Home";
+import { Layout } from "./components/Layout";
+import { PostDetail } from "./components/PostDetail";
+import { Posts } from "./components/Posts";
+
+const router = createBrowserRouter(
+  [
+    {
+      path: "/",
+      element: <Layout />,
+      children: [
+        {
+          index: true,
+          element: <Home />,
+        },
+        {
+          path: "posts",
+          element: <Posts />,
+        },
+        {
+          path: "posts/:id",
+          element: <PostDetail />,
+        },
+      ],
+    },
+    {
+      path: "*",
+      element: <Navigate to="/" replace />,
+    },
+  ],
+  {
+    basename: import.meta.env.BASE_URL,
+  }
+);
 
 function App() {
-  return (
-    <div className="bg-[#050b1e] min-h-screen text-gray-100">
-      <Navbar />
-      <main className="pt-20">
-        <Hero />
-        <About />
-        <Skills />
-        <Projects />
-        <Experience />
-        <Contributions />
-        <Contact />
-        <Resume />
-        <CurriculumVitae />
-      </main>
-      <Copyright />
-    </div>
-  );
+  return <RouterProvider router={router} />;
 }
 
 export default App;

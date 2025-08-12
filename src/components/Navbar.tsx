@@ -1,15 +1,17 @@
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
+import { Link } from "react-router";
 import LanguageSwitcher from "./LanguageSwitcher";
 
 const Navbar = () => {
-  const [opening, setOpening] = useState<boolean>(false);
   const { t } = useTranslation("common");
+
+  const [opening, setOpening] = useState<boolean>(false);
 
   const menus = Object.entries(t("header", { returnObjects: true })).map(
     ([k, v]) => ({
       text: v,
-      link: "#" + k,
+      link: k === "posts" ? "/" + k : "/#" + k,
     })
   ) as any[];
 
@@ -71,9 +73,9 @@ const Navbar = () => {
         >
           {menus.map((m) => (
             <li key={m.text}>
-              <a href={m.link} className="hover:text-[#ea97ef]">
+              <Link to={m.link} className="hover:text-[#ea97ef]">
                 {m.text}
-              </a>
+              </Link>
             </li>
           ))}
           <li>
