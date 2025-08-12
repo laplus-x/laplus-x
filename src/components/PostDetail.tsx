@@ -58,14 +58,14 @@ export const PostDetail = () => {
                   className="text-xl font-semibold mb-2"
                   style={{ color: "#ea97ef" }}
                 >
-                  # {id} {result.val.title}
+                  # {id}
                 </div>
               </div>
               <div className="text-sm" style={{ color: "#fbfefe" }}>
                 {result.val.created_at}
               </div>
             </div>
-            <article className="mb-2">
+            <article className="prose max-w-none prose-invert">
               <ReactMarkdown>{result.val.body}</ReactMarkdown>
             </article>
           </div>
