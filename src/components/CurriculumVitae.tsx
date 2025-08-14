@@ -260,7 +260,7 @@ const Copyright = () => (
     <a
       target="_blank"
       rel="noreferrer noopener"
-      href="https://github.com/laplus-x#cv"
+      href="https://laplus-x.github.io/laplus-x#cv"
     >
       laplus-x.github.io/laplus-x#cv
     </a>
