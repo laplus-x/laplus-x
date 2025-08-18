@@ -37,7 +37,7 @@ export const Posts = () => {
     if (result.val.length < per_page) {
       setHasMore(false);
     }
-  }, [JSON.stringify(result)]);
+  }, [result?.val]);
 
   return (
     <section className="max-w-4xl mx-auto py-10 px-4" id="posts">
@@ -45,30 +45,26 @@ export const Posts = () => {
         {t("title")}
       </h2>
       <div className="space-y-8">
+        {issues.map((issue) => (
+          <Link
+            key={issue.id}
+            to={`/posts/${issue.number}`}
+            className="block rounded-xl shadow hover:shadow-lg transition p-6 border"
+            style={{ borderColor: "#a654fb", color: "#fbfefe" }}
+          >
+            <div className="text-[#ea97ef] font-medium">
+              #{issue.number} {issue.title}
+            </div>
+            <div className="text-xs font-mono" style={{ color: "#a654fb" }}>
+              {issue.labels.join(" / ")}
+            </div>
+          </Link>
+        ))}
         {loading && (
           <div className="text-gray-500 text-center">{t("loading")}</div>
         )}
         {!loading && result && !result.ok && (
           <p className="text-red-500 text-center">{result.val.message}</p>
-        )}
-        {!loading && result && result.ok && (
-          <>
-            {issues.map((issue) => (
-              <Link
-                key={issue.id}
-                to={`/posts/${issue.number}`}
-                className="block rounded-xl shadow hover:shadow-lg transition p-6 border"
-                style={{ borderColor: "#a654fb", color: "#fbfefe" }}
-              >
-                <div className="text-[#ea97ef] font-medium">
-                  #{issue.number} {issue.title}
-                </div>
-                <div className="text-xs font-mono" style={{ color: "#a654fb" }}>
-                  {issue.labels.join(" / ")}
-                </div>
-              </Link>
-            ))}
-          </>
         )}
         {!hasMore && <p className="text-gray-500 text-center">{t("nomore")}</p>}
 
