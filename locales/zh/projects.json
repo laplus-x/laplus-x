@@ -29,9 +29,9 @@
       "issues": []
     },
     {
-      "name": "2048",
+      "name": "Weather Mcp Server",
       "desc": "展現快速學習與靈活應用新技術的能力，短時間完成從選型到交付的完整流程。",
-      "stack": ["TS", "Excalibur", "vite", "Playwright", "Monolith", "chatgpt"],
+      "stack": ["TS", "MCP", "vite", "vitest", "Monolith", "chatgpt"],
       "issues": []
     }
   ]

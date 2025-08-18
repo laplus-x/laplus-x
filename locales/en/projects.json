@@ -20,9 +20,9 @@
       "issues": []
     },
     {
-      "name": "2048",
+      "name": "Weather Mcp Server",
       "desc": "Demonstrate fast learning and flexible application of new technologies, completing the whole process from selection to delivery in a short time.",
-      "stack": ["TS", "Excalibur", "vite", "Playwright", "Monolith", "chatgpt"],
+      "stack": ["TS", "MCP", "vite", "vitest", "Monolith", "chatgpt"],
       "issues": []
     }
   ]
