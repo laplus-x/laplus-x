@@ -67,7 +67,7 @@ const About = () => {
           <img
             src="https://avatars.githubusercontent.com/u/105040809"
             alt="avatar"
-            className="w-50 h-50 shadow-lg bg-[#050b1e] rounded-lg object-cover"
+            className="w-50 h-50 shadow-lg bg-[#212121] rounded-lg object-cover"
           />
         </div>
       </div>

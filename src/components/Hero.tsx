@@ -56,7 +56,7 @@ const Hero = () => {
     <section
       className="relative flex flex-col items-center justify-center min-h-screen overflow-hidden"
       id="hero"
-      style={{ background: "#050b1e" }}
+      style={{ background: "#212121" }}
     >
       <canvas
         ref={canvasRef}
@@ -67,7 +67,7 @@ const Hero = () => {
         <img
           src="https://avatars.githubusercontent.com/u/105040809"
           alt="avatar"
-          className="w-50 h-50 rounded-full shadow-lg bg-[#050b1e] mb-4"
+          className="w-50 h-50 rounded-full shadow-lg bg-[#212121] mb-4"
         />
         <h1
           className="text-4xl md:text-5xl font-extrabold mb-2"

@@ -18,7 +18,7 @@ const Navbar = () => {
   return (
     <nav
       className="w-full flex flex-col shadow fixed top-0 left-0 z-50 "
-      style={{ background: "#050b1e" }}
+      style={{ background: "#212121" }}
     >
       <div
         className="w-full flex justify-between items-center py-4 px-8 border-b"
