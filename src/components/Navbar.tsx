@@ -1,10 +1,11 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
-import { Link } from "react-router";
+import { Link, useLocation } from "react-router";
 import LanguageSwitcher from "./LanguageSwitcher";
 
 const Navbar = () => {
   const { t } = useTranslation("common");
+  const location = useLocation();
 
   const [opening, setOpening] = useState<boolean>(false);
 
@@ -14,6 +15,12 @@ const Navbar = () => {
       link: k === "posts" ? "/" + k : "/#" + k,
     })
   ) as any[];
+
+  useEffect(() => {
+    const id = location.hash.replace("#", "");
+    const el = document.getElementById(id);
+    el?.scrollIntoView({ behavior: "smooth" });
+  }, [location.hash]);
 
   return (
     <nav
@@ -92,13 +99,13 @@ const Navbar = () => {
           >
             {menus.map((m) => (
               <li key={m.text}>
-                <a
-                  href={m.link}
+                <Link
+                  to={m.link}
                   className="block hover:text-[#ea97ef]"
                   onClick={() => setOpening(false)}
                 >
                   {m.text}
-                </a>
+                </Link>
               </li>
             ))}
             <li>

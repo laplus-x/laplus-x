@@ -1,5 +1,3 @@
-import { useEffect } from "react";
-import { useLocation } from "react-router";
 import About from "./About";
 import Contact from "./Contact";
 import Contributions from "./Contributions";
@@ -12,14 +10,6 @@ import Resume from "./Resume";
 import Skills from "./Skills";
 
 export const Home = () => {
-  const location = useLocation();
-
-  useEffect(() => {
-    const id = location.hash.replace("#", "");
-    const el = document.getElementById(id);
-    el?.scrollIntoView({ behavior: "smooth" });
-  }, [location.hash]);
-
   return (
     <>
       <Hero />
