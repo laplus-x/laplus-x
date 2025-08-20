@@ -2,24 +2,28 @@
   "title": "Projects",
   "items": [
     {
+      "key": "poc-server",
       "name": "Poc Server",
       "desc": "Quickly validate innovative ideas in a controlled and low-cost environment. Real-time error feedback and sample libraries shorten the team's technical gap.",
       "stack": ["TS", "Nest", "vite", "vitest", "MonoRepo", "Clean"],
       "issues": []
     },
     {
+      "key": "poc-client",
       "name": "Poc Client",
       "desc": "Quickly validate innovative ideas and evaluate technical feasibility. Real-time error feedback and sample libraries shorten the team's technical gap.",
       "stack": ["TS", "Rush", "React", "vite", "vitest", "Storybook", "MonoRepo", "Clean"],
       "issues": []
     },
     {
+      "key": "dict-extension",
       "name": "Dictionary Extension",
       "desc": "Showcase fast development and efficient delivery by completing the entire process from selection to delivery in a short time.",
       "stack": ["TS", "React", "vite", "vitest", "Monolith", "chatgpt"],
       "issues": []
     },
     {
+      "key": "weather-mcp-server",
       "name": "Weather Mcp Server",
       "desc": "Demonstrate fast learning and flexible application of new technologies, completing the whole process from selection to delivery in a short time.",
       "stack": ["TS", "MCP", "vite", "vitest", "Monolith", "chatgpt"],

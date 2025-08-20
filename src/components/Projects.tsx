@@ -14,9 +14,7 @@ const Projects = () => {
         {projects.map((p) => (
           <a
             key={p.name}
-            href={`https://github.com/laplus-x/${p.name
-              .toLowerCase()
-              .replace(/\s+/g, "-")}`}
+            href={`https://github.com/laplus-x/${p.key}`}
             target="_blank"
             rel="noopener noreferrer"
             className="block rounded-xl shadow hover:shadow-lg transition p-6 border"
