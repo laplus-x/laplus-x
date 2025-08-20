@@ -52,11 +52,11 @@ export const Posts = () => {
             className="block rounded-xl shadow hover:shadow-lg transition p-6 border"
             style={{ borderColor: "#a654fb", color: "#fbfefe" }}
           >
-            <div className="text-[#ea97ef] font-medium">
+            <div className="text-[#ea97ef] font-medium mb-4">
               #{issue.number} {issue.title}
             </div>
             <div className="text-xs font-mono" style={{ color: "#a654fb" }}>
-              {issue.labels.join(" / ")}
+              {issue.labels.map((i) => i.name).join(" / ")}
             </div>
           </Link>
         ))}
