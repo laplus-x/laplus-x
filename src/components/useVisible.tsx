@@ -4,7 +4,7 @@ import { useIntersection } from "./useIntersection";
 
 export const useVisible = () => {
   const [element, setElement] = useState<HTMLElement | null>(null);
-  const [visible, setVisible] = useState(false);
+  const [visible, setVisible] = useState<boolean>(false);
 
   const handle = useDebounce<IntersectionObserverCallback>(
     ([entry]) => setVisible(entry.isIntersecting),
