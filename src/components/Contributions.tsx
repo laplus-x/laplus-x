@@ -27,7 +27,7 @@ const Contributions = () => {
                 </div>
                 <div className="text-xs mb-2" style={{ color: "#a654fb" }}>
                   <span className="mr-2">
-                    {t("contributions.company")}: {con.company}
+                    {t("company")}: {con.company}
                   </span>
                 </div>
               </div>
