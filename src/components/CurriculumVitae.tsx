@@ -269,7 +269,7 @@ const Copyright = () => (
 
 const CurriculumVitae = () => {
   const { t } = useTranslation("cv");
-  const ref = useRef<HTMLDivElement>(null);
+  const printRef = useRef<HTMLDivElement>(null);
 
   const onPrint = useReactToPrint({
     documentTitle: "CurriculumVitae",
@@ -285,13 +285,13 @@ const CurriculumVitae = () => {
           type="button"
           className="px-6 py-2 rounded-full shadow transition border cursor-pointer"
           style={{ borderColor: "#a654fb", color: "#a654fb" }}
-          onClick={() => onPrint(() => ref.current)}
+          onClick={() => onPrint(() => printRef.current)}
         >
           {t("btn.print")}
         </button>
       </div>
       <div
-        ref={ref}
+        ref={printRef}
         className="gray p-10 shadow antialiased rounded-md border border-gray-200 border-dashed bg-white max-w-5xl mx-auto"
       >
         <Hero />
