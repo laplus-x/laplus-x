@@ -1,0 +1,101 @@
+{
+  "title": "Personality Profile",
+  "strengths": "Strengths",
+  "weaknesses": "Weaknesses",
+  "items": [
+    {
+      "title": "Architect (INTJ-T)",
+      "category": "MBTI",
+      "link": "https://www.16personalities.com/intj-personality",
+      "strengths": [
+        {
+          "label": "Innovative Thinking",
+          "description": "Sees possibilities others overlook, finds smarter solutions, and improves work efficiency."
+        },
+        {
+          "label": "Independent Worker",
+          "description": "Excels at completing tasks autonomously, managing work efficiently without frequent guidance."
+        },
+        {
+          "label": "Conceptual Thinking",
+          "description": "Easily grasps abstract and complex concepts, suitable for strategic analysis and long-term planning."
+        },
+        {
+          "label": "Continuous Improvement",
+          "description": "Focuses on process optimization, constantly enhancing project efficiency and outcomes."
+        },
+        {
+          "label": "Objective Judgment",
+          "description": "Makes decisions based on facts, gaining trust and respect from colleagues."
+        },
+        {
+          "label": "Consistent Performance",
+          "description": "Reliable in completing important tasks accurately and excellently."
+        }
+      ],
+      "weaknesses": [
+        {
+          "label": "Socially Awkward",
+          "description": "Not good at self-promotion or networking; strengths may be overlooked."
+        },
+        {
+          "label": "Resistant to Restrictions",
+          "description": "Dislikes meaningless rules, may clash with authority or organizational constraints."
+        },
+        {
+          "label": "Neglects Interpersonal Interaction",
+          "description": "Can overlook workplace politics and informal communication, missing important signals."
+        },
+        {
+          "label": "Reluctant to Delegate",
+          "description": "Overconfident, often takes on too much work or avoids assigning responsibility to others."
+        },
+        {
+          "label": "Feedback Too Direct",
+          "description": "In pursuit of truth and efficiency, may unintentionally hurt sensitive colleagues or reduce motivation."
+        },
+        {
+          "label": "Impatient with Routine",
+          "description": "Easily frustrated by repetitive or monotonous tasks, occasionally distracted."
+        }
+      ]
+    },
+    {
+      "title": "Owl + Tiger",
+      "category": "PDP",
+      "link": "https://bookmarks.tw/pdp/",
+      "strengths": [
+        {
+          "label": "Goal-Oriented",
+          "description": "Quickly clarifies problems and proposes solutions."
+        },
+        {
+          "label": "Strong Execution",
+          "description": "Capable of translating strategic planning into actionable steps."
+        },
+        {
+          "label": "Precision & Carefulness",
+          "description": "Pays attention to details, data, and logic, patiently reviewing issues."
+        },
+        {
+          "label": "Balanced Rationality & Collaboration",
+          "description": "Maintains balance between analytical thinking and team interaction."
+        }
+      ],
+      "weaknesses": [
+        {
+          "label": "Tendency to Play Safe",
+          "description": "Overly cautious or perfectionist; may be conservative in quick decision-making."
+        },
+        {
+          "label": "Focus on Efficiency",
+          "description": "High drive and efficiency can conflict with maintaining interpersonal harmony."
+        },
+        {
+          "label": "Socially Reserved",
+          "description": "Low social energy; networking or persuading others may be draining."
+        }
+      ]
+    }
+  ]
+}

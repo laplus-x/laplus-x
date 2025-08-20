@@ -6,6 +6,7 @@ import Contributions from "./Contributions";
 import CurriculumVitae from "./CurriculumVitae";
 import Experience from "./Experience";
 import Hero from "./Hero";
+import Personality from "./Personality";
 import Projects from "./Projects";
 import Resume from "./Resume";
 import Skills from "./Skills";
@@ -23,6 +24,7 @@ export const Home = () => {
     <>
       <Hero />
       <About />
+      <Personality />
       <Skills />
       <Projects />
       <Experience />

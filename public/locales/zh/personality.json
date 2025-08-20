@@ -1,0 +1,101 @@
+{
+  "title": "人格特質",
+  "strengths": "長板",
+  "weaknesses": "短板",
+  "items": [
+    {
+      "title": "架構師 (INTJ-T)",
+      "category": "MBTI",
+      "link": "https://www.16personalities.com/tw/intj-%E6%80%A7%E6%A0%BC",
+      "strengths": [
+        {
+          "label": "創新思維",
+          "description": "能看到他人忽略的可能性，找到更聰明的解決方案，提升工作成效。"
+        },
+        {
+          "label": "獨立作業者",
+          "description": "擅長自主完成工作，高效管理任務，無需頻繁指示。"
+        },
+        {
+          "label": "概念性思考",
+          "description": "輕鬆掌握抽象與複雜概念，適合策略分析與長遠規劃。"
+        },
+        {
+          "label": "持續改善",
+          "description": "注重流程優化，不斷提升專案效率與成果。"
+        },
+        {
+          "label": "客觀判斷力",
+          "description": "根據事實做決策，獲得同事信任與尊重。"
+        },
+        {
+          "label": "穩定表現",
+          "description": "承擔重要任務時，總能準確出色完成，成為可靠成員。"
+        }
+      ],
+      "weaknesses": [
+        {
+          "label": "社交不自在",
+          "description": "不擅長自我推銷或建立人脈，長處容易被忽略。"
+        },
+        {
+          "label": "難以接受限制",
+          "description": "對無意義規則感反感，可能與體制或主管摩擦。"
+        },
+        {
+          "label": "忽略人際互動",
+          "description": "容易忽視職場政治與非正式交流，可能錯失訊號。"
+        },
+        {
+          "label": "不願分派任務",
+          "description": "自信過高，常承擔過多工作或不分配責任給他人。"
+        },
+        {
+          "label": "反饋過於直接",
+          "description": "追求真實與效率時，容易讓敏感同事受傷或失去動力。"
+        },
+        {
+          "label": "對例行公事不耐煩",
+          "description": "面對重複或單調任務容易煩躁，偶爾分心。"
+        }
+      ]
+    },
+    {
+      "title": "貓頭鷹+老虎",
+      "category": "PDP",
+      "link": "https://bookmarks.tw/pdp/",
+      "strengths": [
+        {
+          "label": "目標導向",
+          "description": "快速釐清問題、提出解決方案"
+        },
+        {
+          "label": "執行力強",
+          "description": "能從策略規劃到落實行動"
+        },
+        {
+          "label": "精準細心",
+          "description": "注重細節、數據與邏輯，耐心檢視問題"
+        },
+        {
+          "label": "兼具理性與協作",
+          "description": "理性分析與團隊互動間保持平衡"
+        }
+      ],
+      "weaknesses": [
+        {
+          "label": "傾向求穩",
+          "description": "過度謹慎或追求完美，快速決策時可能保守"
+        },
+        {
+          "label": "重視效率",
+          "description": "高行動力與追求效率時，可能與維持和諧的人際需求產生拉扯"
+        },
+        {
+          "label": "社交不自在",
+          "description": "社交能量偏低，建立人脈或說服他人可能耗能"
+        }
+      ]
+    }
+  ]
+}
