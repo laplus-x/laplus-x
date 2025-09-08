@@ -32,7 +32,7 @@ const LanguageSwitcher = () => {
     <div className="relative inline text-left" ref={dropdownRef}>
       <button
         onClick={() => setOpen(!open)}
-        className="flex justify-between w-full rounded-md bg-transparent text-md font-medium text-[#a654fb] hover:text-[#ea97ef] focus:outline-none focus:ring-2 focus:ring-offset-1 transition"
+        className="flex justify-between w-full rounded-md bg-transparent text-md font-medium text-[#F7EEE7] hover:text-[#f4cbe8] focus:outline-none focus:ring-2 focus:ring-offset-1 transition"
         aria-haspopup="true"
         aria-expanded={open}
       >
@@ -58,7 +58,7 @@ const LanguageSwitcher = () => {
 
       {open && (
         <div
-          className="origin-top-right absolute right-0 mt-2 min-w-40 w-full rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none z-10"
+          className="origin-top-right absolute right-0 mt-2 min-w-40 w-full rounded-md shadow-lg bg-white ring-1 ring-[#8B7FAC] ring-opacity-5 focus:outline-none z-10"
           role="menu"
           aria-orientation="vertical"
           aria-labelledby="menu-button"
@@ -68,7 +68,7 @@ const LanguageSwitcher = () => {
               <button
                 key={code}
                 onClick={() => changeLanguage(code)}
-                className={`block w-full text-left px-4 py-2 text-sm text-[#a654fb] ${
+                className={`block w-full text-left px-4 py-2 text-sm text-[#8B7FAC] ${
                   i18n.language === code
                     ? "bg-gray-100 font-semibold"
                     : "hover:bg-gray-100"

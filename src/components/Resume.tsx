@@ -278,13 +278,13 @@ const Resume = () => {
   return (
     <section className="max-w-4xl mx-auto py-20 px-4" id="resume">
       <div className="flex justify-between mb-6">
-        <h2 className="text-3xl font-bold" style={{ color: "#a654fb" }}>
+        <h2 className="text-3xl font-bold" style={{ color: "#8B7FAC" }}>
           {t("title")}
         </h2>
         <button
           type="button"
           className="px-6 py-2 rounded-full shadow transition border cursor-pointer"
-          style={{ borderColor: "#a654fb", color: "#a654fb" }}
+          style={{ borderColor: "#8B7FAC", color: "#8B7FAC" }}
           onClick={() => onPrint(() => printRef.current)}
         >
           {t("btn.print")}

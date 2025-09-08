@@ -41,7 +41,7 @@ export const Posts = () => {
 
   return (
     <section className="max-w-4xl mx-auto py-10 px-4" id="posts">
-      <h2 className="text-3xl font-bold mb-6" style={{ color: "#a654fb" }}>
+      <h2 className="text-3xl font-bold mb-6" style={{ color: "#8B7FAC" }}>
         {t("title")}
       </h2>
       <div className="space-y-8">
@@ -50,12 +50,12 @@ export const Posts = () => {
             key={issue.id}
             to={`/posts/${issue.number}`}
             className="block rounded-xl shadow hover:shadow-lg transition p-6 border"
-            style={{ borderColor: "#a654fb", color: "#fbfefe" }}
+            style={{ borderColor: "#8B7FAC", color: "#404040" }}
           >
-            <div className="text-[#ea97ef] font-medium mb-4">
+            <div className="text-[#4d2754] font-medium mb-4">
               #{issue.number} {issue.title}
             </div>
-            <div className="text-xs font-mono" style={{ color: "#a654fb" }}>
+            <div className="text-xs font-mono" style={{ color: "#8B7FAC" }}>
               {issue.labels.map((i) => i.name).join(" / ")}
             </div>
           </Link>

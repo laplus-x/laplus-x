@@ -6,7 +6,7 @@ const About = () => {
   return (
     <section className="max-w-4xl mx-auto py-20 px-4" id="about">
       <div className="flex justify-between mb-6">
-        <h2 className="text-3xl font-bold" style={{ color: "#a654fb" }}>
+        <h2 className="text-3xl font-bold" style={{ color: "#8B7FAC" }}>
           {t("title")}
         </h2>
 
@@ -55,7 +55,7 @@ const About = () => {
       <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-6 gap-4">
         <ul
           className="list-disc pl-6 space-y-2 order-2 sm:order-1"
-          style={{ color: "#fbfefe" }}
+          style={{ color: "#404040" }}
         >
           {(t("points", { returnObjects: true }) as string[]).map(
             (point: string, idx: number) => (
@@ -67,7 +67,7 @@ const About = () => {
           <img
             src="https://avatars.githubusercontent.com/u/105040809"
             alt="avatar"
-            className="w-50 h-50 shadow-lg bg-[#212121] rounded-lg object-cover"
+            className="w-50 h-50 shadow-lg rounded-lg object-cover"
           />
         </div>
       </div>

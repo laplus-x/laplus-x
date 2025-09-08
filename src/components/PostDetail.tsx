@@ -20,7 +20,7 @@ export const PostDetail = () => {
 
   return (
     <section className="max-w-4xl mx-auto py-10 px-4" id="posts">
-      <h2 className="text-3xl font-bold mb-6" style={{ color: "#a654fb" }}>
+      <h2 className="text-3xl font-bold mb-6" style={{ color: "#8B7FAC" }}>
         <Link to="/posts" className="inline-flex items-center space-x-2">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -50,18 +50,18 @@ export const PostDetail = () => {
           <div
             key={result.val.id}
             className="block rounded-xl shadow hover:shadow-lg transition p-6 border"
-            style={{ borderColor: "#a654fb", color: "#fbfefe" }}
+            style={{ borderColor: "#8B7FAC", color: "#404040" }}
           >
             <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-2">
               <div>
                 <div
                   className="text-xl font-semibold mb-2"
-                  style={{ color: "#ea97ef" }}
+                  style={{ color: "#4d2754" }}
                 >
                   # {id}
                 </div>
               </div>
-              <div className="text-sm" style={{ color: "#fbfefe" }}>
+              <div className="text-sm" style={{ color: "#404040" }}>
                 {result.val.created_at}
               </div>
             </div>

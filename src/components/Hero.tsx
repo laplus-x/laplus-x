@@ -1,5 +1,7 @@
+import Logo from "@/assets/logo.png";
 import { useEffect, useRef } from "react";
 import { useTranslation } from "react-i18next";
+import { Link } from "react-router";
 
 const Hero = () => {
   const { t } = useTranslation("hero");
@@ -39,8 +41,8 @@ const Hero = () => {
         ctx.globalAlpha = star.alpha;
         ctx.beginPath();
         ctx.arc(star.x, star.y, star.r, 0, Math.PI * 2);
-        ctx.fillStyle = "#fff";
-        ctx.shadowColor = "#fff";
+        ctx.fillStyle = "#8B7FAC";
+        ctx.shadowColor = "#8B7FAC";
         ctx.shadowBlur = 8;
         ctx.fill();
         ctx.shadowBlur = 0;
@@ -56,7 +58,6 @@ const Hero = () => {
     <section
       className="relative flex flex-col items-center justify-center min-h-screen overflow-hidden"
       id="hero"
-      style={{ background: "#212121" }}
     >
       <canvas
         ref={canvasRef}
@@ -65,45 +66,45 @@ const Hero = () => {
       />
       <div className="relative z-10 flex flex-col items-center">
         <img
-          src="https://avatars.githubusercontent.com/u/105040809"
+          src={Logo}
           alt="avatar"
-          className="w-50 h-50 rounded-full shadow-lg bg-[#212121] mb-4"
+          className="w-50 h-50 mb-4"
         />
         <h1
           className="text-4xl md:text-5xl font-extrabold mb-2"
-          style={{ color: "#a654fb" }}
+          style={{ color: "#8B7FAC" }}
         >
           {t("name")}
         </h1>
         <h2
           className="text-xl md:text-2xl font-semibold mb-4"
-          style={{ color: "#ea97ef" }}
+          style={{ color: "#4d2754" }}
         >
           {t("title")}
         </h2>
         <div
           className="max-w-xl flex flex-col text-center gap-2 mb-6"
-          style={{ color: "#fbfefe" }}
+          style={{ color: "#404040" }}
         >
           <p>{t("intro.line1")}</p>
           <p>{t("intro.line2")}</p>
           <p>{t("intro.line3")}</p>
         </div>
         <div className="max-w-xl flex gap-4 mb-6">
-          <a
-            href="#contact"
-            className="px-6 py-2 rounded-full shadow transition"
-            style={{ background: "#a654fb", color: "#fbfefe" }}
+          <Link
+            to="#contact"
+            className="px-6 py-2 rounded-full shadow transition border border-[#8B7FAC]"
+            style={{ background: "#f4cbe8", color: "#8B7FAC" }}
           >
             {t("btn.contact")}
-          </a>
-          <a
-            href="#contributions"
+          </Link>
+          <Link
+            to="#contributions"
             className="px-6 py-2 rounded-full shadow transition border"
-            style={{ borderColor: "#fbfefe", color: "#fbfefe" }}
+            style={{ background: "#FEFBFB", borderColor: "#8B7FAC", color: "#8B7FAC" }}
           >
             {t("btn.contributions")}
-          </a>
+          </Link>
         </div>
       </div>
     </section>

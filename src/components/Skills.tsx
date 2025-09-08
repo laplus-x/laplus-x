@@ -50,7 +50,7 @@ const Skills = () => {
 
   return (
     <section className="max-w-4xl mx-auto py-20 px-4" id="skills">
-      <h2 className="text-3xl font-bold mb-6" style={{ color: "#a654fb" }}>
+      <h2 className="text-3xl font-bold mb-6" style={{ color: "#8B7FAC" }}>
         {t("title")}
       </h2>
       <div className="grid md:grid-cols-2 gap-8">
@@ -58,7 +58,7 @@ const Skills = () => {
           <div key={group.category} className="rounded-xl p-4">
             <h3
               className="text-xl font-semibold mb-4"
-              style={{ color: "#ea97ef" }}
+              style={{ color: "#4d2754" }}
             >
               {group.category}
             </h3>
@@ -66,7 +66,7 @@ const Skills = () => {
               {group.items.map((item) => (
                 <li
                   key={item}
-                  className="bg-[#a654fb] text-[#fbfefe] px-3 py-1 mb-1 rounded-full text-sm font-medium border border-[#ea97ef]"
+                  className="bg-[#f4cbe8] text-[#8B7FAC] px-3 py-1 mb-1 rounded-full text-sm font-medium border border-[#8B7FAC]"
                 >
                   {item}
                 </li>

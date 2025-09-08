@@ -7,7 +7,7 @@ const Contributions = () => {
 
   return (
     <section className="max-w-4xl mx-auto py-20 px-4" id="contributions">
-      <h2 className="text-3xl font-bold mb-6" style={{ color: "#a654fb" }}>
+      <h2 className="text-3xl font-bold mb-6" style={{ color: "#8B7FAC" }}>
         {t("title")}
       </h2>
       <div className="space-y-8">
@@ -15,23 +15,23 @@ const Contributions = () => {
           <div
             key={con.title}
             className="block rounded-xl shadow hover:shadow-lg transition p-6 border"
-            style={{ borderColor: "#a654fb", color: "#fbfefe" }}
+            style={{ borderColor: "#8B7FAC", color: "#404040" }}
           >
             <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-2">
               <div>
                 <div
                   className="text-xl font-semibold mb-2"
-                  style={{ color: "#ea97ef" }}
+                  style={{ color: "#4d2754" }}
                 >
                   {con.title}
                 </div>
-                <div className="text-xs mb-2" style={{ color: "#a654fb" }}>
+                <div className="text-xs mb-2" style={{ color: "#8B7FAC" }}>
                   <span className="mr-2">
-                    {t("company")}: {con.company}
+                    {t("company")}：{con.company}
                   </span>
                 </div>
               </div>
-              <div className="text-sm" style={{ color: "#fbfefe" }}>
+              <div className="text-sm" style={{ color: "#404040" }}>
                 {con.status}
               </div>
             </div>
@@ -41,7 +41,7 @@ const Contributions = () => {
                 <li key={issue}>{issue}</li>
               ))}
             </ul>
-            <div className="text-xs font-mono" style={{ color: "#a654fb" }}>
+            <div className="text-xs font-mono" style={{ color: "#8B7FAC" }}>
               {con.stack.join(" / ")}
             </div>
           </div>

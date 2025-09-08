@@ -12,7 +12,10 @@ const Navbar = () => {
   const menus = Object.entries(t("header", { returnObjects: true })).map(
     ([k, v]) => ({
       text: v,
-      link: k === "posts" ? "/" + k : "/#" + k,
+      link:
+        k === "posts"
+          ? { pathname: "/" + k }
+          : { pathname: "/", hash: "#" + k },
     })
   ) as any[];
 
@@ -25,21 +28,21 @@ const Navbar = () => {
   return (
     <nav
       className="w-full flex flex-col shadow fixed top-0 left-0 z-50 "
-      style={{ background: "#212121" }}
+      style={{ background: "#8B7FAC" }}
     >
       <div
         className="w-full flex justify-between items-center py-4 px-8 border-b"
-        style={{ borderColor: "#a654fb" }}
+        style={{ borderColor: "#F7EEE7" }}
       >
         <div
           className="font-bold text-xl tracking-widest"
-          style={{ color: "#a654fb" }}
+          style={{ color: "#f4cbe8" }}
         >
           Margo Chen
         </div>
 
         <button
-          className="inline-flex sm:hidden items-center justify-center p-2 ml-2 rounded-md text-gray-400 hover:text-[#ea97ef] focus:outline-none"
+          className="inline-flex sm:hidden items-center justify-center p-2 ml-2 rounded-md text-gray-400 hover:text-[#f4cbe8] focus:outline-none"
           onClick={() => setOpening(!opening)}
         >
           {!opening && (
@@ -76,11 +79,11 @@ const Navbar = () => {
 
         <ul
           className="hidden items-baseline sm:flex gap-6 font-medium"
-          style={{ color: "#fbfefe" }}
+          style={{ color: "#F7EEE7" }}
         >
           {menus.map((m) => (
             <li key={m.text}>
-              <Link to={m.link} className="hover:text-[#ea97ef]">
+              <Link to={m.link} className="hover:text-[#f4cbe8]">
                 {m.text}
               </Link>
             </li>
@@ -95,13 +98,13 @@ const Navbar = () => {
         <div className="bg-background shadow-lg rounded-b-lg py-4 px-8 mt-1">
           <ul
             className="px-2 pt-2 pb-3 space-y-1 sm:px-3"
-            style={{ color: "#fbfefe" }}
+            style={{ color: "#404040" }}
           >
             {menus.map((m) => (
               <li key={m.text}>
                 <Link
                   to={m.link}
-                  className="block hover:text-[#ea97ef]"
+                  className="block hover:text-[#f4cbe8]"
                   onClick={() => setOpening(false)}
                 >
                   {m.text}
