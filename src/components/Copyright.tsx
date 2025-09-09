@@ -4,7 +4,7 @@ const Copyright = () => {
   const { t } = useTranslation("common");
 
   return (
-    <footer className="w-full flex justify-center items-center py-4 px-8">
+    <footer className="w-full flex justify-center items-center py-4 px-8 text-[#404040] bg-[#E2DFFA]">
       <p>{t("footer.copyright", "© 2025 Margo Chen | Built with React and Tailwind")}</p>
     </footer>
   );
