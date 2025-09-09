@@ -114,7 +114,7 @@ const Contact = () => {
             ></path>
           </svg>
           <a href="https://laplus-x.github.io/laplus-x" target="_blank">
-            laplus-x.github.io
+            laplus-x.github.io/laplus-x
           </a>
         </div>
         <div className="flex items-center gap-1">
@@ -153,7 +153,7 @@ const Contact = () => {
             href="https://www.linkedin.com/in/margo-chen-812045378"
             target="_blank"
           >
-            in/margo-chen
+            in/margo-chen-812045378
           </a>
         </div>
       </div>
