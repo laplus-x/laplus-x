@@ -42,7 +42,7 @@ const Navbar = () => {
         </div>
 
         <button
-          className="inline-flex sm:hidden items-center justify-center p-2 ml-2 rounded-md text-gray-400 hover:text-[#f4cbe8] focus:outline-none"
+          className="inline-flex sm:hidden items-center justify-center p-2 ml-2 rounded-md text-[#F7EEE7] hover:text-[#f4cbe8] focus:outline-none"
           onClick={() => setOpening(!opening)}
         >
           {!opening && (
@@ -98,7 +98,7 @@ const Navbar = () => {
         <div className="bg-background shadow-lg rounded-b-lg py-4 px-8 mt-1">
           <ul
             className="px-2 pt-2 pb-3 space-y-1 sm:px-3"
-            style={{ color: "#404040" }}
+            style={{ color: "#F7EEE7" }}
           >
             {menus.map((m) => (
               <li key={m.text}>
